@@ -59,26 +59,26 @@ Ada 3 cara untuk mendeklarasikan variable yaitu:
 
 ```
 var
-  - Scope: Fungsi (function-scoped). Tidak terbatas pada blok {}.
-  - Reassign: Bisa diubah nilainya.
-  - Redeclare: Bisa dideklarasikan ulang dalam scope yang sama.
-  - Hoisting: Di-hoist ke atas, tapi nilainya undefined sampai dieksekusi.
+- Scope: Fungsi (function-scoped). Tidak terbatas pada blok {}.
+- Reassign: Bisa diubah nilainya.
+- Redeclare: Bisa dideklarasikan ulang dalam scope yang sama.
+- Hoisting: Di-hoist ke atas, tapi nilainya undefined sampai dieksekusi.
 ```
 
 ```
 let
-  - Scope: Blok (block-scoped), hanya berlaku di dalam {}.
-  - Reassign: Bisa diubah nilainya.
-  - Redeclare: Tidak bisa dideklarasikan ulang dalam scope yang sama.
-  - Hoisting: Di-hoist, tapi tidak bisa diakses sebelum deklarasi 'temporal dead zone'.
+- Scope: Blok (block-scoped), hanya berlaku di dalam {}.
+- Reassign: Bisa diubah nilainya.
+- Redeclare: Tidak bisa dideklarasikan ulang dalam scope yang sama.
+- Hoisting: Di-hoist, tapi tidak bisa diakses sebelum deklarasi 'temporal dead zone'.
 ```
 
 ```
 const
-  - Scope: Blok (block-scoped).
-  - Reassign: Tidak bisa diubah nilainya setelah deklarasi.
-  - Redeclare: Tidak bisa dideklarasikan ulang.
-  - Hoisting: Sama seperti let, ada 'temporal dead zone'.
+- Scope: Blok (block-scoped).
+- Reassign: Tidak bisa diubah nilainya setelah deklarasi.
+- Redeclare: Tidak bisa dideklarasikan ulang.
+- Hoisting: Sama seperti let, ada 'temporal dead zone'.
 ```
 
 ---
@@ -101,11 +101,11 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
   
   ```
   istilah penting dalam number:
-   	- Integer → bilangan bulat, contoh: 10, -5. maksimal 15 digit.
-   	- Floating Point → bilangan desimal, contoh: 3.14, -0.5 maksimal 17 digit dibelakang koma.
-   	- Exponential Notation → penulisan angka dengan pangkat 10, contoh: 2e3 → 2000.
-   	- Infinity / -Infinity → hasil dari pembagian dengan nol atau angka terlalu besar.
-   	- NaN (Not-a-Number) → hasil operasi matematika yang tidak valid, contoh: 0/0.
+  - Integer → bilangan bulat, contoh: 10, -5. maksimal 15 digit.
+  - Floating Point → bilangan desimal, contoh: 3.14, -0.5 maksimal 17 digit dibelakang koma.
+  - Exponential Notation → penulisan angka dengan pangkat 10, contoh: 2e3 → 2000.
+  - Infinity / -Infinity → hasil dari pembagian dengan nol atau angka terlalu besar.
+  - NaN (Not-a-Number) → hasil operasi matematika yang tidak valid, contoh: 0/0.
   ```
   
   ---
@@ -118,14 +118,14 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
   
   ```
   macam-macam escape caracter yaitu:
-   	- \0 → karakter null.
-   	- \' → ' (kutip satu).
-   	- \" → " (kutip dua).
-   	- \\ → \ (BackSlace satu).
-   	- \n → baris baru.
-   	- \t → tab.
-   	- \b → backspace.
-   	- \uXXXX → Unicode.
+  - \0 → karakter null.
+  - \' → ' (kutip satu).
+  - \" → " (kutip dua).
+  - \\ → \ (BackSlace satu).
+  - \n → baris baru.
+  - \t → tab.
+  - \b → backspace.
+  - \uXXXX → Unicode.
   ```
   
   ---
@@ -138,9 +138,9 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
   
   ```
   Operator Logika yang Menghasilkan Boolean:
-   	- AND (&&) → bernilai true jika kedua kondisi benar.
-   	- OR (||) → bernilai true jika salah satu kondisi benar.
-   	- NOT (!) → membalik nilai Boolean.
+  - AND (&&) → bernilai true jika kedua kondisi benar.
+  - OR (||) → bernilai true jika salah satu kondisi benar.
+  - NOT (!) → membalik nilai Boolean.
   ```
 
   ---
@@ -171,10 +171,10 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
 
   ```
   Konsep Utama Function:
-    - Deklarasi: Membuat function dengan nama tertentu.
-    - Parameter: Nilai yang kita masukkan ke function agar bisa diproses.
-    - Return value: Hasil yang dikembalikan oleh function setelah dijalankan.
-    - Pemanggilan (call): Menjalankan function dengan menuliskan namanya.
+  - Deklarasi: Membuat function dengan nama tertentu.
+  - Parameter: Nilai yang kita masukkan ke function agar bisa diproses.
+  - Return value: Hasil yang dikembalikan oleh function setelah dijalankan.
+  - Pemanggilan (call): Menjalankan function dengan menuliskan namanya.
   ```
   
   - **Function Declaration** 📎
@@ -209,47 +209,46 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
 
   ```
   Karakteristik Array:
-   	- Kumpulan data: Bisa berisi banyak nilai sekaligus.
-    - Indeks: Elemen pertama berada di indeks 0, elemen kedua di 1, dan seterusnya.
-    - Dinamis: Ukuran array bisa bertambah atau berkurang sesuai kebutuhan.
-    - Heterogen: Bisa menyimpan berbagai tipe data (string, number, object, bahkan array lain).
-    - Terurut: Data disusun berdasarkan urutan indeks.
+  - Kumpulan data: Bisa berisi banyak nilai sekaligus.
+  - Indeks: Elemen pertama berada di indeks 0, elemen kedua di 1, dan seterusnya.
+  - Dinamis: Ukuran array bisa bertambah atau berkurang sesuai kebutuhan.
+  - Heterogen: Bisa menyimpan berbagai tipe data (string, number, object, bahkan array lain).
+  - Terurut: Data disusun berdasarkan urutan indeks.
   ```
   
   ```
   Method Pada Array:
-
-   	1. Menambah & Menghapus Elemen
-       - push() → menambah elemen di akhir array.
-   	   - pop() → menghapus elemen terakhir.
-   	   - unshift() → menambah elemen di awal array.
-   	   - shift() → menghapus elemen pertama.
-   	   - splice() → menambah, menghapus, atau mengganti elemen di posisi tertentu.
-   	   - slice() → menyalin sebagian array (tidak mengubah array asli).
+  1. Menambah & Menghapus Elemen
+     - push() → menambah elemen di akhir array.
+     - pop() → menghapus elemen terakhir.
+     - unshift() → menambah elemen di awal array.
+     - shift() → menghapus elemen pertama.
+     - splice() → menambah, menghapus, atau mengganti elemen di posisi tertentu.
+     - slice() → menyalin sebagian array (tidak mengubah array asli).
   
-   	2. Mencari & Mengecek Elemen
-   	   - indexOf() → mencari indeks pertama dari elemen tertentu.
-   	   - lastIndexOf() → mencari indeks terakhir dari elemen tertentu.
-   	   - includes() → mengecek apakah elemen ada di array.
-   	   - find() → mengembalikan elemen pertama yang cocok dengan kondisi.
-   	   - findIndex() → mengembalikan indeks dari elemen yang cocok.
-   	   - every → mengecek apakah semua elemen benar bernilai true dan false jika ada satu yang salah.
-   	   - some → mengecek apakah ada satu elemen benar bernilai true dan false jika semua elemen salah.
+  2. Mencari & Mengecek Elemen
+     - indexOf() → mencari indeks pertama dari elemen tertentu.
+     - lastIndexOf() → mencari indeks terakhir dari elemen tertentu.
+     - includes() → mengecek apakah elemen ada di array.
+     - find() → mengembalikan elemen pertama yang cocok dengan kondisi.
+     - findIndex() → mengembalikan indeks dari elemen yang cocok.
+     - every → mengecek apakah semua elemen benar bernilai true dan false jika ada satu yang salah.
+     - some → mengecek apakah ada satu elemen benar bernilai true dan false jika semua elemen salah.
   
-   	3. Transformasi & Iterasi
-   	   - map() → membuat array baru dengan hasil transformasi tiap elemen.
-   	   - forEach() → menjalankan fungsi untuk setiap elemen (tidak menghasilkan array baru).
-   	   - filter() → membuat array baru berisi elemen yang lolos kondisi.
-   	   - reduce() → menggabungkan semua elemen menjadi satu nilai (misalnya jumlah total).
-   	   - sort() → mengurutkan elemen.
-   	   - reverse() → membalik urutan elemen.
+  3. Transformasi & Iterasi
+     - map() → membuat array baru dengan hasil transformasi tiap elemen.
+     - forEach() → menjalankan fungsi untuk setiap elemen (tidak menghasilkan array baru).
+     - filter() → membuat array baru berisi elemen yang lolos kondisi.
+     - reduce() → menggabungkan semua elemen menjadi satu nilai (misalnya jumlah total).
+     - sort() → mengurutkan elemen.
+     - reverse() → membalik urutan elemen.
   
-   	4. Utility & Lainnya
-   	   - concat() → menggabungkan dua atau lebih array.
-       - join() → menggabungkan elemen menjadi string dengan separator tertentu.
-       - flat() → meratakan array bersarang (nested array).
-       - isArray() → mengecek apakah suatu variabel adalah array.
-       - toString() → mengubah array menjadi string.
+  4. Utility & Lainnya
+     - concat() → menggabungkan dua atau lebih array.
+     - join() → menggabungkan elemen menjadi string dengan separator tertentu.
+     - flat() → meratakan array bersarang (nested array).
+     - isArray() → mengecek apakah suatu variabel adalah array.
+     - toString() → mengubah array menjadi string.
   ```
     
   ---
