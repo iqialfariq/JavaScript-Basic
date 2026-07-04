@@ -51,7 +51,7 @@ cara menggunakan | console.log('pesan');
 
 ---
 
-### 📝 Penjelasan Variabel
+## 📝 Penjelasan Variabel
 <p align="justify"> 
 Variabel adalah wadah untuk menyimpan data yang bisa digunakan dan dimanipulasi dalam program. Dengan variabel, kita bisa memberi nama pada sebuah nilai agar mudah dipanggil kembali.
 Ada 3 cara untuk mendeklarasikan variable yaitu:
