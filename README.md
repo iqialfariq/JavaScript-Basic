@@ -179,6 +179,8 @@ Operator adalah simbol khusus yang digunakan untuk melakukan operasi pada nilai 
    	- ** → pangkat.
   ```
 
+  ---
+
 - **Operator Penugasan / Assignment** 📎
   <p align="justify">  
   Memberikan nilai ke variabel.
@@ -192,6 +194,8 @@ Operator adalah simbol khusus yang digunakan untuk melakukan operasi pada nilai 
    	- /= → bagi lalu assign.
    	- %= → sisah bagi lalu assign.
   ```
+
+  ---
 
 - **Operator Perbandingan / Comparison** 📎
   <p align="justify">  
@@ -209,6 +213,8 @@ Operator adalah simbol khusus yang digunakan untuk melakukan operasi pada nilai 
    	- <= → lebih kecil atau sama.
   ```
 
+  ---
+
 - **Operator Logika** 📎
   <p align="justify">  
   Dipakai untuk operasi boolean.
@@ -220,6 +226,8 @@ Operator adalah simbol khusus yang digunakan untuk melakukan operasi pada nilai 
    	- ! → NOT (membalikan nilai true - false atau false - true).
   ```
 
+  ---
+
 - **Operator String** 📎
   <p align="justify">  
   Dipakai untuk menggabungkan string atau tuisan dan angka.
@@ -230,6 +238,8 @@ Operator adalah simbol khusus yang digunakan untuk melakukan operasi pada nilai 
    	- +=
   ```
 
+  ---
+
 - **Operator Increment / Decrement** 📎
   <p align="justify">  
   Dipakai untuk melakukan tambah atau kurang secara singkat.
@@ -239,6 +249,8 @@ Operator adalah simbol khusus yang digunakan untuk melakukan operasi pada nilai 
    	- ++ → tambah 1.
    	- -- → kurang 1.
   ```
+
+  ---
 
 - **Unary Operator / typeof** 📎
   <p align="justify">  
@@ -252,6 +264,8 @@ Operator adalah simbol khusus yang digunakan untuk melakukan operasi pada nilai 
    	- typeof x → cek tipe data.
    	- delete obj.prop → hapus properti.
   ```
+
+  ---
 
 - **Operator Ternary / Conditional** 📎
   <p align="justify">  
@@ -288,6 +302,8 @@ dan penanganan error. Jenis Control Flow di JavaScrip ada 2 yaitu pengulangan da
     - Perulangan ke-4
     - Perulangan ke-5
 
+    ---
+  
 - **While** 📎
   <p align="justify">  
   While loop di JavaScript adalah salah satu bentuk control flow yang digunakan untuk menjalankan blok kode berulang kali selama kondisi bernilai true.
@@ -308,6 +324,8 @@ dan penanganan error. Jenis Control Flow di JavaScrip ada 2 yaitu pengulangan da
     - Perulangan ke-4
     - Perulangan ke-5
 
+    ---
+  
 - **Do While** 📎
   <p align="justify">  
   Do...While pada JavaScript adalah salah satu bentuk loop (perulangan) yang memastikan blok kode dijalankan setidaknya sekali, sebelum memeriksa kondisi.
@@ -328,6 +346,8 @@ dan penanganan error. Jenis Control Flow di JavaScrip ada 2 yaitu pengulangan da
     - Perulangan ke-4
     - Perulangan ke-5
 
+    ---
+  
 - **If** 📎
   <p align="justify">  
   If statement di JavaScript adalah salah satu bentuk control flow yang digunakan untuk membuat percabangan logika. Dengan if, kita bisa menjalankan kode tertentu hanya jika kondisi bernilai true.
@@ -343,6 +363,8 @@ dan penanganan error. Jenis Control Flow di JavaScrip ada 2 yaitu pengulangan da
   Output:
     - Boleh masuk
 
+    ---
+  
 - **If Else** 📎
   <p align="justify">  
   If...Else di JavaScript adalah struktur control flow yang digunakan untuk membuat percabangan logika. Dengan ini, program bisa memilih jalur eksekusi berbeda tergantung apakah suatu kondisi bernilai
@@ -361,6 +383,8 @@ dan penanganan error. Jenis Control Flow di JavaScrip ada 2 yaitu pengulangan da
   Output:
     - Belum cukup umur
 
+    ---
+  
 - **If, Else If, Else** 📎
   <p align="justify">  
   If...Else If...Else di JavaScript adalah struktur control flow yang digunakan untuk membuat percabangan logika dengan banyak kondisi. Dengan ini, program bisa memilih jalur eksekusi berbeda tergantung
@@ -383,6 +407,8 @@ dan penanganan error. Jenis Control Flow di JavaScrip ada 2 yaitu pengulangan da
   Output:
     - Nilai B
 
+    ---
+  
 - **Switch** 📎
   <p align="justify">  
   Switch statement di JavaScript adalah salah satu bentuk control flow yang digunakan untuk menangani percabangan dengan banyak kemungkinan nilai. Fungsinya mirip dengan if...else if...else, tetapi lebih
