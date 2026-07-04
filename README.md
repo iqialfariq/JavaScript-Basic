@@ -269,7 +269,7 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
 
   - **Cara Menuliskan Object** 📎
 
-- **Object Literal** 📎
+  - **Object Literal** 📎
   <p align="justify">
     Digunakan untuk data sederhana & statis.
   </p>
@@ -285,7 +285,7 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
   console.log(mobil.brand); // Toyota
   console.log(mobil["tahun"]); // Supra
 
-- **Keyword New Object()** 📎
+  - **Keyword New Object()** 📎
   <p align="justify">
       Digunakan untuk gaya lama dan library / framework jadul.
   </p>
@@ -302,7 +302,7 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
   console.log(person);
   // { nama: 'Dani', umur: 25, kota: 'Jakarta' }
 
-- **Constructor Function** 📎
+  - **Constructor Function** 📎
   <p align="justify">
       Digunakan untuk buat banyak object dengan struktur sama.
   </p>
@@ -324,7 +324,7 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
   console.log(mhs1.sapa()); // Halo, saya Dani dari jurusan Informatika
   console.log(mhs2.sapa()); // Halo, saya Dina dari jurusan Desain
 
-- **Class (ES6)** 📎
+  - **Class (ES6)** 📎
   <p align="justify">
       Digunakan untuk buat banyak object dengan pola sama dan lebih modern.
   </p>
@@ -350,7 +350,7 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
   console.log(mhs1.sapa()); // Halo, saya Dani dari jurusan Informatika
   console.log(mhs2.sapa()); // Halo, saya Dina dari jurusan Desain
   
-- **Object.create()** 📎
+  - **Object.create()** 📎
   <p align="justify">
       Digunakan untuk buat object dengan prototype custom tanpa class.
   </p>
@@ -371,7 +371,7 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
   console.log(kucing.bisaBergerak);  // true (warisan dari hewan)
   console.log(kucing.makan());       // Hewan sedang makan
 
-- **Factory Function** 📎
+  - **Factory Function** 📎
   <p align="justify">
       Digunakan untuk buat object tanpa ribet pakai new.
   </p>
