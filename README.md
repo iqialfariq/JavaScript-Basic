@@ -88,8 +88,11 @@ const
 Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primitive (Reference) types.
 </p>
 
+
 ### 📌 Tipe Data Primitive Types
 
+  ---
+  
 - **Number** 📎
   <p align="justify">  
   Number adalah tipe data primitif yang digunakan untuk merepresentasikan angka, baik bilangan bulat (integer) maupun bilangan pecahan (floating point). Semua angka di JavaScript (kecuali BigInt) disimpan
@@ -104,7 +107,9 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
    	- Infinity / -Infinity → hasil dari pembagian dengan nol atau angka terlalu besar.
    	- NaN (Not-a-Number) → hasil operasi matematika yang tidak valid, contoh: 0/0.
   ```
-
+  
+  ---
+  
 - **String** 📎
   <p align="justify">  
   Tipe data String di JavaScript adalah tipe data primitif yang digunakan untuk menyimpan teks, yaitu kumpulan karakter. String bisa berupa huruf, angka, simbol, atau bahkan emoji, selama diapit oleh tanda
@@ -122,6 +127,8 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
    	- \b → backspace.
    	- \uXXXX → Unicode.
   ```
+  
+  ---
 
 - **Boolean** 📎
   <p align="justify">  
@@ -136,11 +143,15 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
    	- NOT (!) → membalik nilai Boolean.
   ```
 
+  ---
+
 - **Null** 📎
   <p align="justify">  
   Null adalah sebuah nilai khusus dalam pemrograman yang menandakan bahwa sebuah variabel tidak memiliki nilai atau kosong. Biasanya dipakai dalam situasi di mana kita ingin menandai bahwa sebuah variabel
   belum memiliki nilai atau tidak ada data yang relevan.
   </p>
+
+  ---
 
 - **Undefined** 📎
   <p align="justify">  
