@@ -1,7 +1,7 @@
 # 🧠 Penjelasan JavaScript
 <p align="justify">
-JavaScript (disingkat JS) adalah bahasa pemrograman yang digunakan terutama untuk membuat halaman web menjadi dinamis dan interaktif, bekerja bersama HTML (struktur) dan CSS (desain). JavaScript dibuat oleh Brendan Eich pada tahun 1995 saat ia bekerja di Netscape Communications.
-ada 2 cara untuk menyimpan file javascript internal js dan external js.
+JavaScript (disingkat JS) adalah bahasa pemrograman yang digunakan terutama untuk membuat halaman web menjadi dinamis dan interaktif, bekerja bersama HTML (struktur) dan CSS (desain). JavaScript dibuat
+oleh Brendan Eich pada tahun 1995 saat ia bekerja di Netscape Communications. ada 2 cara untuk menyimpan file javascript internal js dan external js.
 </p>
 
 ---
@@ -264,7 +264,7 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
 - **Object** 📎
   <p align="justify">  
   object adalah struktur data yang menyimpan pasangan key dan value. Object bisa berisi property (data) dan method (fungsi), sehingga dapat merepresentasikan sesuatu yang kompleks seperti mobil, pengguna,
-  atau produk.
+  atau produk. Cara membuat object secara umum ada 6 yaitu:
   </p>
   
   - **Object Literal** 📎
