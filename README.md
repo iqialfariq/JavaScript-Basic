@@ -118,14 +118,14 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
   
   ```
   macam-macam escape caracter yaitu:
-  - \0 → karakter null.
-  - \' → ' (kutip satu).
-  - \" → " (kutip dua).
-  - \\ → \ (BackSlace satu).
-  - \n → baris baru.
-  - \t → tab.
-  - \b → backspace.
-  - \uXXXX → Unicode.
+  \0 → karakter null.
+  \' → ' (kutip satu).
+  \" → " (kutip dua).
+  \\ → \ (BackSlace satu).
+  \n → baris baru.
+  \t → tab.
+  \b → backspace.
+  \uXXXX → Unicode.
   ```
   
   ---
@@ -138,9 +138,9 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
   
   ```
   Operator Logika yang Menghasilkan Boolean:
-  - AND && → bernilai true jika kedua kondisi benar.
-  - OR || → bernilai true jika salah satu kondisi benar.
-  - NOT ! → membalik nilai Boolean.
+  AND && → bernilai true jika kedua kondisi benar.
+  OR || → bernilai true jika salah satu kondisi benar.
+  NOT ! → membalik nilai Boolean.
   ```
 
   ---
@@ -416,12 +416,12 @@ Operator adalah simbol khusus yang digunakan untuk melakukan operasi pada nilai 
   </p>
   
   ```
-   	- + → penjumlahan.
-   	- - → pengurangan.
-   	- * → perkalian.
-   	- / → pembagian.
-   	- % → modulus (sisa bagi).
-   	- ** → pangkat.
+   	+ → penjumlahan.
+   	- → pengurangan.
+   	* → perkalian.
+   	/ → pembagian.
+   	% → modulus (sisa bagi).
+   	** → pangkat.
   ```
 
   ---
@@ -432,12 +432,12 @@ Operator adalah simbol khusus yang digunakan untuk melakukan operasi pada nilai 
   </p>
   
   ```
-   	- = → assignment dasar.
-   	- += → tambah lalu assign.
-   	- -= → kurang lalu assign.
-   	- *= → kali lalu assign.
-   	- /= → bagi lalu assign.
-   	- %= → sisah bagi lalu assign.
+   	= → assignment dasar.
+   	+= → tambah lalu assign.
+   	-= → kurang lalu assign.
+   	*= → kali lalu assign.
+   	/= → bagi lalu assign.
+   	%= → sisah bagi lalu assign.
   ```
 
   ---
@@ -448,14 +448,14 @@ Operator adalah simbol khusus yang digunakan untuk melakukan operasi pada nilai 
   </p>
   
   ```
-   	- == → dua sama dengan (longgar, cek nilai saja).
-   	- === → tiga sama dengan (ketat, cek nilai & tipe data).
-   	- != → tidak satu sama dengan (longgar, cek nilai saja).
-   	- !== → tidak dua sama dengan (ketat, cek nilai & tipe data).
-   	- > → lebih besar.
-   	- < → lebih kecil.
-   	- >= → lebih besar atau sama.
-   	- <= → lebih kecil atau sama.
+   	== → dua sama dengan (longgar, cek nilai saja).
+   	=== → tiga sama dengan (ketat, cek nilai & tipe data).
+   	!= → tidak satu sama dengan (longgar, cek nilai saja).
+   	!== → tidak dua sama dengan (ketat, cek nilai & tipe data).
+   	> → lebih besar.
+   	< → lebih kecil.
+   	>= → lebih besar atau sama.
+   	<= → lebih kecil atau sama.
   ```
 
   ---
@@ -466,9 +466,9 @@ Operator adalah simbol khusus yang digunakan untuk melakukan operasi pada nilai 
   </p>
   
   ```
-   	- && → AND (kedua nya harus true).
-   	- || → OR (salah satunya nya boleh true/false).
-   	- ! → NOT (membalikan nilai true - false atau false - true).
+   	&& → AND (kedua nya harus true).
+   	|| → OR (salah satunya nya boleh true/false).
+   	! → NOT (membalikan nilai true - false atau false - true).
   ```
 
   ---
@@ -479,8 +479,8 @@ Operator adalah simbol khusus yang digunakan untuk melakukan operasi pada nilai 
   </p>
   
   ```
-   	- +
-   	- +=
+   	+
+   	+=
   ```
 
   ---
@@ -491,8 +491,8 @@ Operator adalah simbol khusus yang digunakan untuk melakukan operasi pada nilai 
   </p>
   
   ```
-   	- ++ → tambah 1.
-   	- -- → kurang 1.
+   	++ → tambah 1.
+   	-- → kurang 1.
   ```
 
   ---
@@ -503,11 +503,11 @@ Operator adalah simbol khusus yang digunakan untuk melakukan operasi pada nilai 
   </p>
   
   ```
-   	- +x → mengubah ke number.
-   	- -x → negasi nilai.
-   	- !x → logical NOT.
-   	- typeof x → cek tipe data.
-   	- delete obj.prop → hapus properti.
+   	+x → mengubah ke number.
+   	-x → negasi nilai.
+   	!x → logical NOT.
+   	typeof x → cek tipe data.
+   	delete obj.prop → hapus properti.
   ```
 
   ---
