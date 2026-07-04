@@ -158,6 +158,45 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
   Undefined adalah tipe data primitif di JavaScript. Nilai ini muncul ketika sebuah variabel sudah dideklarasikan tetapi belum diberi nilai. Jadi, undefined berarti "variabel ada, tapi belum ada isi".
   </p>  
 
+### 📌 Tipe Data Non Primitive Types
+
+  ---
+  
+- **Function** 📎
+  <p align="justify">  
+  Function di JavaScript adalah sebuah blok kode yang bisa dipanggil berulang kali untuk menjalankan tugas tertentu. Jadi, daripada menulis ulang kode yang sama, kita bungkus dalam function lalu tinggal
+  memanggilnya kapan saja.
+  </p>
+
+  ```
+  Konsep Utama Function:
+   	- Deklarasi: Membuat function dengan nama tertentu.
+    - Parameter: Nilai yang kita masukkan ke function agar bisa diproses.
+    - Return value: Hasil yang dikembalikan oleh function setelah dijalankan.
+    - Pemanggilan (call): Menjalankan function dengan menuliskan namanya.
+  ```
+  
+- **Array** 📎
+  <p align="justify">  
+  Array pada JavaScript adalah struktur data yang digunakan untuk menyimpan sekumpulan nilai dalam satu variabel, dengan urutan tertentu dan indeks yang dimulai dari 0. Jadi, alih-alih membuat banyak
+  variabel untuk setiap data, kita bisa mengelompokkan semuanya dalam satu array.
+  </p>
+
+  ```
+  Karakteristik Array:
+   	- Kumpulan data: Bisa berisi banyak nilai sekaligus.
+    - Indeks: Elemen pertama berada di indeks 0, elemen kedua di 1, dan seterusnya.
+    - Dinamis: Ukuran array bisa bertambah atau berkurang sesuai kebutuhan.
+    - Heterogen: Bisa menyimpan berbagai tipe data (string, number, object, bahkan array lain).
+    - Terurut: Data disusun berdasarkan urutan indeks.
+  ```
+  
+- **Object** 📎
+  <p align="justify">  
+  object adalah struktur data yang menyimpan pasangan key dan value. Object bisa berisi property (data) dan method (fungsi), sehingga dapat merepresentasikan sesuatu yang kompleks seperti mobil, pengguna,
+  atau produk.
+  </p>
+
 ---
 
 ## 🔣 Penjelasan Operator
@@ -276,7 +315,7 @@ Operator adalah simbol khusus yang digunakan untuk melakukan operasi pada nilai 
   contoh:
    	- kondisi ? nilaiJikaTrue : nilaiJikaFalse
   ```
-
+    
 ---
 
 ## 🔀 Penjelasan Control Flow
