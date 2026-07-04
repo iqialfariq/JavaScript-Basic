@@ -158,6 +158,8 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
   Undefined adalah tipe data primitif di JavaScript. Nilai ini muncul ketika sebuah variabel sudah dideklarasikan tetapi belum diberi nilai. Jadi, undefined berarti "variabel ada, tapi belum ada isi".
   </p>  
 
+---
+
 ### 📌 Tipe Data Non Primitive Types
 
   ---
@@ -175,7 +177,9 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
     - Return value: Hasil yang dikembalikan oleh function setelah dijalankan.
     - Pemanggilan (call): Menjalankan function dengan menuliskan namanya.
   ```
-  
+    
+  ---
+
 - **Array** 📎
   <p align="justify">  
   Array pada JavaScript adalah struktur data yang digunakan untuk menyimpan sekumpulan nilai dalam satu variabel, dengan urutan tertentu dan indeks yang dimulai dari 0. Jadi, alih-alih membuat banyak
@@ -190,7 +194,9 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
     - Heterogen: Bisa menyimpan berbagai tipe data (string, number, object, bahkan array lain).
     - Terurut: Data disusun berdasarkan urutan indeks.
   ```
-  
+    
+  ---
+
 - **Object** 📎
   <p align="justify">  
   object adalah struktur data yang menyimpan pasangan key dan value. Object bisa berisi property (data) dan method (fungsi), sehingga dapat merepresentasikan sesuatu yang kompleks seperti mobil, pengguna,
