@@ -215,12 +215,13 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
   - Heterogen: Bisa menyimpan berbagai tipe data (string, number, object, bahkan array lain).
   - Terurut: Data disusun berdasarkan urutan indeks.
   ```
-
-  ```js
-  // Membuat array dengan cara literal (paling umum)
-  let buah = ["apel", "jeruk", "mangga"];
-  // Array ini berisi 3 elemen string: "apel", "jeruk", "mangga"
-  // Index dimulai dari 0 → buah[0] = "apel", buah[1] = "jeruk", buah[2] = "mangga"
+  
+  - **Cara Menuliskan Array** 📎
+    ```js
+    // Membuat array dengan cara literal (paling umum)
+    let buah = ["apel", "jeruk", "mangga"];
+    // Array ini berisi 3 elemen string: "apel", "jeruk", "mangga"
+    // Index dimulai dari 0 → buah[0] = "apel", buah[1] = "jeruk", buah[2] = "mangga"
   
   ```
   Method Pada Array:
@@ -265,6 +266,22 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
   object adalah struktur data yang menyimpan pasangan key dan value. Object bisa berisi property (data) dan method (fungsi), sehingga dapat merepresentasikan sesuatu yang kompleks seperti mobil, pengguna,
   atau produk.
   </p>
+
+  - **Cara Menuliskan Object** 📎
+    ```js
+    // Membuat object dengan cara literal (paling umum)
+    let mobil = {
+      merk: "Toyota",       // property 'merk' dengan nilai string
+      tahun: 2020,          // property 'tahun' dengan nilai number
+      warna: "hitam",       // property 'warna' dengan nilai string
+    };
+
+    // Akses property dengan dot notation
+    console.log(mobil.merk);   // Toyota
+    console.log(mobil.tahun);  // 2020
+    
+    // Akses property dengan bracket notation
+    console.log(mobil["warna"]); // hitam
 
 ---
 
