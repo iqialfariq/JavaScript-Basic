@@ -171,7 +171,7 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
 
   ```
   Konsep Utama Function:
-   	- Deklarasi: Membuat function dengan nama tertentu.
+    - Deklarasi: Membuat function dengan nama tertentu.
     - Parameter: Nilai yang kita masukkan ke function agar bisa diproses.
     - Return value: Hasil yang dikembalikan oleh function setelah dijalankan.
     - Pemanggilan (call): Menjalankan function dengan menuliskan namanya.
@@ -179,6 +179,7 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
   
   ```
   Cara menuliskan function ada 2 yaitu:
+    ```
   
   - **Function Declaration** 📎
       ```js
@@ -201,7 +202,6 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
       
       // pemanggilan function menggunakan nama function itu sendiri
       console.log(kali(4, 6)); // Output: 24
-  ```
     
   ---
 
