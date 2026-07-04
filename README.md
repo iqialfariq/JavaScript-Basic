@@ -301,9 +301,9 @@ dan penanganan error. Jenis Control Flow di JavaScrip ada 2 yaitu pengulangan da
     - Perulangan ke-3
     - Perulangan ke-4
     - Perulangan ke-5
-
-    ---
   
+---
+   
 - **While** 📎
   <p align="justify">  
   While loop di JavaScript adalah salah satu bentuk control flow yang digunakan untuk menjalankan blok kode berulang kali selama kondisi bernilai true.
@@ -324,8 +324,8 @@ dan penanganan error. Jenis Control Flow di JavaScrip ada 2 yaitu pengulangan da
     - Perulangan ke-4
     - Perulangan ke-5
 
-    ---
-  
+---
+   
 - **Do While** 📎
   <p align="justify">  
   Do...While pada JavaScript adalah salah satu bentuk loop (perulangan) yang memastikan blok kode dijalankan setidaknya sekali, sebelum memeriksa kondisi.
@@ -345,9 +345,9 @@ dan penanganan error. Jenis Control Flow di JavaScrip ada 2 yaitu pengulangan da
     - Perulangan ke-3
     - Perulangan ke-4
     - Perulangan ke-5
-
-    ---
   
+---
+ 
 - **If** 📎
   <p align="justify">  
   If statement di JavaScript adalah salah satu bentuk control flow yang digunakan untuk membuat percabangan logika. Dengan if, kita bisa menjalankan kode tertentu hanya jika kondisi bernilai true.
@@ -363,8 +363,8 @@ dan penanganan error. Jenis Control Flow di JavaScrip ada 2 yaitu pengulangan da
   Output:
     - Boleh masuk
 
-    ---
-  
+---
+   
 - **If Else** 📎
   <p align="justify">  
   If...Else di JavaScript adalah struktur control flow yang digunakan untuk membuat percabangan logika. Dengan ini, program bisa memilih jalur eksekusi berbeda tergantung apakah suatu kondisi bernilai
@@ -383,7 +383,7 @@ dan penanganan error. Jenis Control Flow di JavaScrip ada 2 yaitu pengulangan da
   Output:
     - Belum cukup umur
 
-    ---
+---
   
 - **If, Else If, Else** 📎
   <p align="justify">  
@@ -407,7 +407,7 @@ dan penanganan error. Jenis Control Flow di JavaScrip ada 2 yaitu pengulangan da
   Output:
     - Nilai B
 
-    ---
+---
   
 - **Switch** 📎
   <p align="justify">  
