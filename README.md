@@ -138,9 +138,9 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
   
   ```
   Operator Logika yang Menghasilkan Boolean:
-  - AND (&&) → bernilai true jika kedua kondisi benar.
-  - OR (||) → bernilai true jika salah satu kondisi benar.
-  - NOT (!) → membalik nilai Boolean.
+  - AND && → bernilai true jika kedua kondisi benar.
+  - OR || → bernilai true jika salah satu kondisi benar.
+  - NOT ! → membalik nilai Boolean.
   ```
 
   ---
