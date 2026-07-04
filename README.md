@@ -158,7 +158,6 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
   Undefined adalah tipe data primitif di JavaScript. Nilai ini muncul ketika sebuah variabel sudah dideklarasikan tetapi belum diberi nilai. Jadi, undefined berarti "variabel ada, tapi belum ada isi".
   </p>  
 
----
 
 ### 📌 Tipe Data Non Primitive Types
 
@@ -347,7 +346,7 @@ dan penanganan error. Jenis Control Flow di JavaScrip ada 2 yaitu pengulangan da
     - Perulangan ke-4
     - Perulangan ke-5
   
----
+  ---
    
 - **While** 📎
   <p align="justify">  
