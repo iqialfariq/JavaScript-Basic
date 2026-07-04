@@ -177,31 +177,27 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
     - Pemanggilan (call): Menjalankan function dengan menuliskan namanya.
   ```
   
-  ```
-  Cara menuliskan function ada 2 yaitu:
-    ```
-  
   - **Function Declaration** 📎
-      ```js
-      // Berikan inisialisasi nama pada function
-      function tambah(a, b) {
-        // Kembalikan nilai nya lalu berikan kondisi nya
-        return a + b;
-      }
+    ```js
+    // Berikan inisialisasi nama pada function
+    function tambah(a, b) {
+    // Kembalikan nilai nya lalu berikan kondisi nya
+      return a + b;
+    }
       
-      // pemanggilan function menggunakan nama function itu sendiri
-      console.log(tambah(5, 7)); // Output: 12
+    // pemanggilan function menggunakan nama function itu sendiri
+    console.log(tambah(5, 7)); // Output: 12
 
   - **Function Expression** 📎
-      ```js
-      // Berikan inisialisasi pada variabel
-      const kali = function(a, b) {
-      // Kembalikan nilai nya lalu berikan kondisi nya
-        return a * b;
-      };
+    ```js
+    // Berikan inisialisasi pada variabel
+    const kali = function(a, b) {
+    // Kembalikan nilai nya lalu berikan kondisi nya
+      return a * b;
+    };
       
-      // pemanggilan function menggunakan nama function itu sendiri
-      console.log(kali(4, 6)); // Output: 24
+    // pemanggilan function menggunakan nama function itu sendiri
+    console.log(kali(4, 6)); // Output: 24
     
   ---
 
