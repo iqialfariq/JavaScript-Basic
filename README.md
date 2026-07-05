@@ -107,6 +107,61 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
   - Infinity / -Infinity → hasil dari pembagian dengan nol atau angka terlalu besar.
   - NaN (Not-a-Number) → hasil operasi matematika yang tidak valid, contoh: 0/0.
   ```
+
+  ```
+  Method Pada Number:
+  ```
+  ```js
+  toFixed() → Mengatur jumlah angka di belakang koma.
+  const price = 12500.567;
+
+  console.log(price.toFixed(2));
+  // "12500.57"
+  ```
+  ```js
+  toString() → Mengubah number menjadi string
+  const number = 123;
+
+  console.log(number.toString());
+  // "123"
+  ```
+  ```js
+  toExponential() → Mengubah ke bentuk notasi ilmiah.
+  const num = 5000;
+
+  console.log(num.toExponential(2));
+  // "5.00e+3"
+  ```
+  ```js
+  toPrecision() → Menentukan jumlah digit signifikan.
+  const num = 123.4567;
+
+  console.log(num.toPrecision(3));
+  // "123"
+  
+  console.log(num.toPrecision(5));
+  // "123.46"
+  ```
+  ```js
+  valueOf() → Mengembalikan nilai primitif number.
+  const num = 100;
+
+  console.log(num.valueOf());
+  // 100
+  
+  console.log(typeof num.valueOf());
+  // "number"
+  ```
+  ```js
+  toLocaleString() → Memformat angka sesuai format lokal
+  const money = 1500000;
+
+  console.log(money.toLocaleString("id-ID"));
+  // "1.500.000"
+  
+  console.log(money.toLocaleString("en-US"));
+  // "1,500,000"
+  ```
   
   ---
   
