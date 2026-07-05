@@ -109,58 +109,142 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
   ```
 
   ```
-  Method Pada Number:
+  1. Instance Method (dipanggil dari angkanya)
   ```
   ```js
   toFixed() → Mengatur jumlah angka di belakang koma.
-  const price = 12500.567;
-
-  console.log(price.toFixed(2));
-  // "12500.57"
+  
+  const price = 12500.567; // Harga awal.
+  const result = price.toFixed(2); // Ubah menjadi 2 angka desimal.
+  
+  console.log(result); // "12500.57"
   ```
   ```js
-  toString() → Mengubah number menjadi string
-  const number = 123;
-
-  console.log(number.toString());
-  // "123"
+  toString() → Mengubah number menjadi string.
+  
+  const number = 123; // Angka awal.
+  const result = number.toString(); // Ubah number menjadi string.
+  
+  console.log(result); // "123"
+  console.log(typeof result); // "string"
   ```
   ```js
   toExponential() → Mengubah ke bentuk notasi ilmiah.
-  const num = 5000;
-
-  console.log(num.toExponential(2));
-  // "5.00e+3"
+  
+  const num = 5000; // Angka awal.
+  const result = num.toExponential(2); // Tampilkan 2 digit di belakang koma.
+  
+  console.log(result); // "5.00e+3"
+  console.log(typeof result); // "string"
   ```
   ```js
   toPrecision() → Menentukan jumlah digit signifikan.
-  const num = 123.4567;
-
-  console.log(num.toPrecision(3));
-  // "123"
   
-  console.log(num.toPrecision(5));
-  // "123.46"
+  const num = 123.4567; // Angka awal.
+  
+  const result1 = num.toPrecision(3); // Tampilkan 3 digit signifikan.
+  const result2 = num.toPrecision(5); // Tampilkan 5 digit signifikan.
+  
+  console.log(result1); // "123"
+  console.log(result2); // "123.46"
+  console.log(typeof result1); // "string"
   ```
   ```js
   valueOf() → Mengembalikan nilai primitif number.
-  const num = 100;
-
-  console.log(num.valueOf());
-  // 100
   
-  console.log(typeof num.valueOf());
-  // "number"
+  const num = 100; // Angka awal.
+  const result = num.valueOf(); // Ambil nilai aslinya.
+  
+  console.log(result); // 100
+  console.log(typeof result); // "number"
   ```
   ```js
-  toLocaleString() → Memformat angka sesuai format lokal
-  const money = 1500000;
-
-  console.log(money.toLocaleString("id-ID"));
-  // "1.500.000"
+  toLocaleString() → Memformat angka sesuai format lokal.
   
-  console.log(money.toLocaleString("en-US"));
-  // "1,500,000"
+  const money = 1500000; // Nominal uang.
+  
+  const indonesia = money.toLocaleString("id-ID"); // Format Indonesia.
+  const america = money.toLocaleString("en-US"); // Format Amerika.
+  
+  console.log(indonesia); // "1.500.000"
+  console.log(america); // "1,500,000"
+  ```
+  ```
+  2. Static Method (dipanggil dari Number)
+  ```
+  ```js
+  Number.isInteger() → Digunakan untuk mengecek apakah sebuah nilai merupakan bilangan bulat (integer).
+  
+  const quantity = 5; // Jumlah barang.
+  
+  // Jika quantity adalah bilangan bulat, tampilkan "Jumlah barang valid".
+  if (Number.isInteger(quantity)) {
+    console.log("Jumlah barang valid");
+  // Jika bukan bilangan bulat, tampilkan "Jumlah barang harus bilangan bulat".
+  } else {
+    console.log("Jumlah barang harus bilangan bulat");
+  }
+  
+  // Output:
+  // Jumlah barang valid
+  ```
+  ```js
+  Number.isNaN() → Digunakan untuk mengecek apakah suatu nilai adalah NaN (Not a Number).
+
+  const age = Number("dua puluh"); // Mengubah input menjadi number.
+
+  // Jika age bernilai NaN, tampilkan pesan error.
+  if (Number.isNaN(age)) {
+    console.log("Masukkan umur berupa angka");
+  // Jika bukan NaN, berarti input berupa angka.
+  } else {
+    console.log("Umur valid");
+  }
+  
+  // Output:
+  // Masukkan umur berupa angka
+  ```
+  ```js
+  Number.isFinite() → Digunakan untuk mengecek apakah suatu nilai merupakan angka yang valid, yaitu bukan NaN, Infinity, atau -Infinity.
+
+  const result = 100 / 0; // Hasilnya adalah Infinity.
+
+  // Jika result merupakan angka yang valid, tampilkan "Hasil valid".
+  if (Number.isFinite(result)) {
+    console.log("Hasil valid");
+  // Jika result bukan angka yang valid (NaN atau Infinity), tampilkan "Hasil tidak valid".
+  } else {
+    console.log("Hasil tidak valid");
+  }
+  
+  // Output:
+  // Hasil tidak valid
+  ```
+  ```js
+  Number.parseInt() → Digunakan untuk mengubah string menjadi bilangan bulat (integer).
+
+  const width = "300px"; // Nilai lebar dalam bentuk string.
+  
+  // Mengambil angka di awal string dan mengabaikan karakter setelahnya.
+  const result = Number.parseInt(width);
+  
+  console.log(result);
+  
+  // Output:
+  // 300
+  ```
+  ```js
+  Number.parseFloat() → Digunakan untuk mengubah string menjadi angka desimal (floating point).
+
+  const weight = "65.5kg"; // Nilai berat dalam bentuk string.
+  
+  // Mengambil angka desimal di awal string dan mengabaikan karakter setelahnya.
+  const result = Number.parseFloat(weight);
+  
+  console.log(result);
+  
+  // Output:
+  // 65.5
   ```
   
   ---
