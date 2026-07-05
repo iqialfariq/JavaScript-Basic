@@ -46,7 +46,6 @@ cara menggunakan | confirm('pesan');
 
 console.log (Digunakan untuk menampilkan pesan atau nilai ke console. Biasanya digunakan untuk debuging).
 cara menggunakan | console.log('pesan');
-
 ```
 
 ---
@@ -169,6 +168,7 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
   console.log(indonesia); // "1.500.000"
   console.log(america); // "1,500,000"
   ```
+  
   ```
   2. Static Method (dipanggil dari Number)
   ```
@@ -251,8 +251,8 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
   
 - **String** 📎
   <p align="justify">  
-  Tipe data String di JavaScript adalah tipe data primitif yang digunakan untuk menyimpan teks, yaitu kumpulan karakter. String bisa berupa huruf, angka, simbol, atau bahkan emoji, selama diapit oleh tanda
-  kutip tunggal ('...'), tanda kutip ganda ("..."), atau template literal dengan backtick (`...`).
+  Tipe data String di JavaScript adalah tipe data primitif yang digunakan untuk menyimpan teks, yaitu kumpulan karakter. String bisa berupa huruf, angka, simbol, atau bahkan emoji, selama diapit oleh
+  tanda kutip tunggal ('...'), tanda kutip ganda ("..."), atau template literal dengan backtick (`...`).
   </p>
   
   ```
@@ -267,6 +267,359 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
   \uXXXX → Unicode.
   ```
   
+  ```
+  1. Method Pencarian (Searching)
+  ```
+  ```js
+  includes() → Mengecek apakah string mengandung teks tertentu.
+
+  const email = "user@gmail.com"; // Email yang akan diperiksa.
+
+  // Cek apakah email mengandung "@gmail.com".
+  const result = email.includes("@gmail.com");
+  
+  console.log(result);
+  
+  // Output:
+  // true
+  ```
+  ```js
+  startsWith() → Mengecek apakah string diawali dengan teks tertentu.
+
+  const fileName = "photo.png"; // Nama file yang akan diperiksa.
+
+  // Cek apakah nama file diawali dengan "photo".
+  const result = fileName.startsWith("photo");
+  
+  console.log(result);
+  
+  // Output:
+  // true
+  ```
+  ```js
+  endsWith() → Mengecek apakah string diakhiri dengan teks tertentu.
+
+  const fileName = "photo.png"; // Nama file yang akan diperiksa.
+
+  // Cek apakah nama file diakhiri dengan ".png".
+  const result = fileName.endsWith(".png");
+  
+  console.log(result);
+  
+  // Output:
+  // true
+  ```
+  ```js
+  indexOf() → Mencari posisi kemunculan pertama suatu teks.
+
+  const sentence = "Saya sedang belajar JavaScript."; // Kalimat yang akan diperiksa.
+
+  // Cari posisi pertama kata "belajar".
+  const result = sentence.indexOf("belajar");
+  
+  console.log(result);
+  
+  // Output:
+  // 12
+  ```
+  ```js
+  lastIndexOf() → Mencari posisi kemunculan terakhir suatu teks.
+  
+  const sentence = "JavaScript itu seru. Saya suka JavaScript."; // Kalimat yang akan diperiksa.
+
+  // Cari posisi terakhir kata "JavaScript".
+  const result = sentence.lastIndexOf("JavaScript");
+  
+  console.log(result);
+  
+  // Output:
+  // 33
+  ```
+  ```js
+  search() → Mencari posisi teks menggunakan string atau Regular Expression (RegExp).
+
+  const sentence = "Saya sedang belajar JavaScript."; // Kalimat yang akan diperiksa.
+
+  // Cari posisi kata "belajar".
+  const result = sentence.search("belajar");
+  
+  console.log(result);
+  
+  // Output:
+  // 12 
+  ```
+  
+  ```
+  2. Method Mengambil Sebagian String (Extracting)
+  ```
+  ```js
+  slice() → Mengambil sebagian string berdasarkan indeks.
+
+  const text = "Belajar JavaScript"; // Teks yang akan diambil sebagian.
+
+  // Ambil teks mulai dari indeks ke-8 sampai sebelum indeks ke-18.
+  const result = text.slice(8, 18);
+  
+  console.log(result);
+  
+  // Output:
+  // JavaScript
+  ```
+  ```js
+  substring() → Mengambil sebagian string tanpa menerima indeks negatif.
+
+  const text = "Belajar JavaScript"; // Teks yang akan diambil sebagian.
+
+  // Ambil teks mulai dari indeks ke-8 sampai sebelum indeks ke-18.
+  const result = text.substring(8, 18);
+  
+  console.log(result);
+  
+  // Output:
+  // JavaScript
+  ```
+  ```js
+  at() → Mengambil karakter berdasarkan indeks (mendukung indeks negatif).
+
+  const text = "JavaScript"; // Teks yang akan diperiksa.
+
+  // Ambil karakter pada indeks ke-4.
+  const result = text.at(4);
+  
+  console.log(result);
+  
+  // Output:
+  // S
+  ```
+  ```js
+  charAt() → Mengambil satu karakter berdasarkan indeks.
+
+  const text = "JavaScript"; // Teks yang akan diperiksa.
+
+  // Ambil karakter pada indeks ke-4.
+  const result = text.charAt(4);
+  
+  console.log(result);
+  
+  // Output:
+  // S
+  ```
+  
+  ```
+  3. Method Mengubah Isi String (Manipulation)
+  ```
+  ```js
+  replace() → Mengganti kemunculan pertama teks yang cocok.
+
+  const sentence = "Saya suka Java, Java itu menyenangkan."; // Kalimat yang akan diubah.
+
+  // Ganti kemunculan pertama "Java" menjadi "JavaScript".
+  const result = sentence.replace("Java", "JavaScript");
+  
+  console.log(result);
+  
+  // Output:
+  // Saya suka JavaScript, Java itu menyenangkan.
+  ```
+  ```js
+  replaceAll() → Mengganti semua teks yang cocok.
+
+  const sentence = "Java itu seru. Java mudah dipelajari."; // Kalimat yang akan diubah.
+  
+  // Ganti semua kata "Java" menjadi "JavaScript".
+  const result = sentence.replaceAll("Java", "JavaScript");
+  
+  console.log(result);
+  
+  // Output:
+  // JavaScript itu seru. JavaScript mudah dipelajari.
+  ```
+  ```js
+  concat() → Menggabungkan dua atau lebih string.
+
+  const firstName = "Risqi"; // Nama depan.
+  const lastName = "Alfariq"; // Nama belakang.
+  
+  // Gabungkan nama depan dan nama belakang.
+  const result = firstName.concat(" ", lastName);
+  
+  console.log(result);
+  
+  // Output:
+  // Risqi Alfariq
+  ```
+  ```js
+  repeat() → Mengulang string sebanyak jumlah tertentu.
+
+  const text = "⭐"; // Karakter yang akan diulang.
+
+  // Ulangi karakter sebanyak 5 kali.
+  const result = text.repeat(5);
+  
+  console.log(result);
+  
+  // Output:
+  // ⭐⭐⭐⭐⭐
+  ```
+  
+  ```
+  4. Method Mengubah Huruf (Case Conversion)
+  ```
+  ```js
+  toUpperCase() → Mengubah semua huruf menjadi kapital.
+
+  const name = "risqi alfariq"; // Nama pengguna.
+
+  // Ubah semua huruf menjadi kapital.
+  const result = name.toUpperCase();
+  
+  console.log(result);
+  
+  // Output:
+  // RISQI ALFARIQ
+  ```
+  ```js
+  toLowerCase() → Mengubah semua huruf menjadi kecil.
+
+  const email = "USER@GMAIL.COM"; // Email pengguna.
+
+  // Ubah semua huruf menjadi kecil.
+  const result = email.toLowerCase();
+  
+  console.log(result);
+  
+  // Output:
+  // user@gmail.com
+  ```
+  
+  ```
+  5. Method Menghapus Spasi (Trimming)
+  ```
+  ```js
+  trim() → Menghapus spasi di awal dan akhir string.
+
+  const username = "  risqi  "; // Username dengan spasi.
+
+  // Hapus spasi di awal dan akhir string.
+  const result = username.trim();
+  
+  console.log(result);
+  
+  // Output:
+  // "risqi"
+  ```
+  ```js
+  trimStart() → Menghapus spasi di awal string.
+
+  const username = "  risqi"; // Username dengan spasi di awal.
+
+  // Hapus spasi di awal string.
+  const result = username.trimStart();
+  
+  console.log(result);
+  
+  // Output:
+  // "risqi"
+  ```
+  ```js
+  trimEnd() → Menghapus spasi di akhir string.
+
+  const username = "risqi  "; // Username dengan spasi di akhir.
+
+  // Hapus spasi di akhir string.
+  const result = username.trimEnd();
+  
+  console.log(result);
+  
+  // Output:
+  // "risqi"
+  ```
+  
+  ```
+  6. Method Memisahkan String (Split)
+  ```
+  ```js
+  split() → Memisahkan string menjadi array berdasarkan pemisah tertentu.
+
+  const fruits = "Apel,Jeruk,Mangga"; // Data dalam bentuk string.
+
+  // Pisahkan string menjadi array berdasarkan tanda koma.
+  const result = fruits.split(",");
+  
+  console.log(result);
+  
+  // Output:
+  // ["Apel", "Jeruk", "Mangga"]
+  ```
+  
+  ```
+  7. Method Konversi
+  ```
+  ```js
+  valueOf() → Mengembalikan nilai asli (primitive value) dari string.
+
+  const text = "JavaScript"; // String awal.
+
+  // Ambil nilai asli dari string.
+  const result = text.valueOf();
+  
+  console.log(result);
+  console.log(typeof result);
+  
+  // Output:
+  // JavaScript
+  // string
+  ```
+  ```js
+  toString() → Mengembalikan string itu sendiri.
+
+  const text = "JavaScript"; // String awal.
+
+  // Ubah nilai menjadi string.
+  const result = text.toString();
+  
+  console.log(result);
+  console.log(typeof result);
+  
+  // Output:
+  // JavaScript
+  // string
+  ```
+  
+  ```
+  8. Method Static (String)
+  ```
+  ```js
+  String.fromCharCode() → Membuat string dari kode karakter Unicode.
+
+  const result = String.fromCharCode(65); // Kode Unicode untuk huruf "A".
+
+  console.log(result);
+  
+  // Output:
+  // A
+  ```
+  ```js
+  String.fromCodePoint() → Membuat string dari Unicode code point (mendukung karakter modern seperti emoji).
+
+  const result = String.fromCodePoint(0x1F600); // Unicode code point untuk emoji 😀.
+
+  console.log(result);
+  
+  // Output:
+  // 😀
+  ```
+  ```js
+  String.raw() → Membuat string mentah tanpa memproses karakter escape pada template literal.
+
+  const result = String.raw`C:\Users\Risqi\Documents`;
+
+  console.log(result);
+  
+  // Output:
+  // C:\Users\Risqi\Documents
+  ```
+
   ---
 
 - **Boolean** 📎
@@ -281,7 +634,41 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
   OR || → bernilai true jika salah satu kondisi benar.
   NOT ! → membalik nilai Boolean.
   ```
+  
+  ```
+  1. Method Boolean
+  ```
+  ```js
+  toString() → Digunakan untuk mengubah nilai boolean menjadi string.
 
+  const isLogin = true; // Status login pengguna.
+
+  // Ubah nilai boolean menjadi string.
+  const result = isLogin.toString();
+  
+  console.log(result);
+  console.log(typeof result);
+  
+  // Output:
+  // "true"
+  // "string"
+  ```
+  ```js
+  valueOf() → Digunakan untuk mengambil nilai asli dari boolean.
+
+  const isLogin = true; // Status login pengguna.
+
+  // Ambil nilai asli dari boolean.
+  const result = isLogin.valueOf();
+  
+  console.log(result);
+  console.log(typeof result);
+  
+  // Output:
+  // true
+  // "boolean"
+  ```
+  
   ---
 
 - **Null** 📎
@@ -326,6 +713,7 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
       
     // pemanggilan function menggunakan nama function itu sendiri
     console.log(tambah(5, 7)); // Output: 12
+    ```
 
   - **Function Expression** 📎
     ```js
@@ -337,7 +725,122 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
       
     // pemanggilan function menggunakan nama function itu sendiri
     console.log(kali(4, 6)); // Output: 24
+    ```
     
+  ```
+  1. Method Pemanggilan Function (Function Invocation)
+  ```
+  ```js
+  call() → Memanggil function dengan this dan argumen satu per satu.
+  
+  function greet(city) {
+    console.log(`Halo, saya ${this.name} dari ${city}`);
+  }
+  
+  const person = {
+    name: "Risqi",
+  };
+  
+  // Panggil function dengan this mengacu ke object person.
+  greet.call(person, "Bandung");
+  
+  // Output:
+  // Halo, saya Risqi dari Bandung
+  ```
+  ```js
+  apply() → Memanggil function dengan this dan argumen dalam bentuk array.
+
+  function greet(city, country) {
+    console.log(`Halo, saya ${this.name} dari ${city}, ${country}`);
+  }
+  
+  const person = {
+    name: "Risqi",
+  };
+  
+  // Panggil function dengan this mengacu ke object person.
+  greet.apply(person, ["Bandung", "Indonesia"]);
+  
+  // Output:
+  // Halo, saya Risqi dari Bandung, Indonesia
+  ```
+  
+  ```
+  2. Method Binding Function
+  ```
+  ```js
+  bind() → Membuat function baru dengan nilai this yang sudah ditentukan.
+
+  function greet() {
+    console.log(`Halo, saya ${this.name}`);
+  }
+  
+  const person = {
+    name: "Risqi",
+  };
+  
+  // Buat function baru dengan this mengacu ke object person.
+  const sayHello = greet.bind(person);
+  
+  // Jalankan function yang sudah dibuat.
+  sayHello();
+  
+  // Output:
+  // Halo, saya Risqi
+  ```
+  
+  ```
+  3. Method Warisan dari Object (Jarang dibahas)
+  ```
+  ```js
+  toString() → Mengembalikan source code function dalam bentuk string.
+  
+  function greet() {
+    return "Halo, JavaScript!";
+  }
+  
+  // Ubah function menjadi string yang berisi source code.
+  const result = greet.toString();
+  
+  console.log(result);
+  
+  // Output:
+  // function greet() {
+  //   return "Halo, JavaScript!";
+  // }
+  ```
+  ```js
+  valueOf() → Mengembalikan nilai asli dari function.
+  
+  function greet() {
+    return "Halo, JavaScript!";
+  }
+  
+  // Ambil referensi asli dari function.
+  const result = greet.valueOf();
+  
+  console.log(result === greet);
+  
+  // Output:
+  // true
+  ```
+  ```js
+  hasOwnProperty() → Mengecek apakah function memiliki properti sendiri.
+  
+  function greet() {}
+  
+  // Tambahkan properti baru ke dalam function.
+  greet.version = "1.0";
+  
+  // Cek apakah function memiliki properti "version".
+  const result = greet.hasOwnProperty("version");
+  
+  console.log(result);
+  
+  // Output:
+  // true
+  ```
+  
   ---
 
 - **Array** 📎
@@ -361,41 +864,346 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
     let buah = ["apel", "jeruk", "mangga"];
     // Array ini berisi 3 elemen string: "apel", "jeruk", "mangga"
     // Index dimulai dari 0 → buah[0] = "apel", buah[1] = "jeruk", buah[2] = "mangga"
+    ```
   
   ```
-  Method Pada Array:
-  
   1. Menambah & Menghapus Elemen
-     - push() → menambah elemen di akhir array.
-     - pop() → menghapus elemen terakhir.
-     - unshift() → menambah elemen di awal array.
-     - shift() → menghapus elemen pertama.
-     - splice() → menambah, menghapus, atau mengganti elemen di posisi tertentu.
-     - slice() → menyalin sebagian array (tidak mengubah array asli).
+  ```
+  ```js
+  push() → menambah elemen di akhir array.
+
+  const fruits = ["Apel", "Jeruk"]; // Array awal.
+
+  // Tambahkan elemen ke akhir array.
+  fruits.push("Mangga");
   
+  console.log(fruits);
+  
+  // Output:
+  // ["Apel", "Jeruk", "Mangga"]
+  ```
+  ```js
+  pop() → menghapus elemen terakhir.
+
+  const fruits = ["Apel", "Jeruk", "Mangga"]; // Array awal.
+
+  // Hapus elemen terakhir dari array.
+  fruits.pop();
+  
+  console.log(fruits);
+  
+  // Output:
+  // ["Apel", "Jeruk"]
+  ```
+  ```js
+  unshift() → menambah elemen di awal array.
+
+  const fruits = ["Jeruk", "Mangga"]; // Array awal.
+
+  // Tambahkan elemen ke awal array.
+  fruits.unshift("Apel");
+  
+  console.log(fruits);
+  
+  // Output:
+  // ["Apel", "Jeruk", "Mangga"]
+  ```
+  ```js
+  shift() → menghapus elemen pertama.
+
+  const fruits = ["Apel", "Jeruk", "Mangga"]; // Array awal.
+
+  // Hapus elemen pertama dari array.
+  fruits.shift();
+  
+  console.log(fruits);
+  
+  // Output:
+  // ["Jeruk", "Mangga"]
+  ```
+  ```js
+  splice() → menambah, menghapus, atau mengganti elemen di posisi tertentu.
+
+  const fruits = ["Apel", "Jeruk", "Mangga"]; // Array awal.
+
+  // Hapus 1 elemen mulai dari indeks ke-1.
+  fruits.splice(1, 1);
+  
+  console.log(fruits);
+  
+  // Output:
+  // ["Apel", "Mangga"]
+  ```
+  ```js
+  slice() → menyalin sebagian array (tidak mengubah array asli).
+
+  const fruits = ["Apel", "Jeruk", "Mangga", "Anggur"]; // Array awal.
+
+  // Salin elemen dari indeks ke-1 sampai sebelum indeks ke-3.
+  const result = fruits.slice(1, 3);
+  
+  console.log(result);
+  console.log(fruits);
+  
+  // Output:
+  // ["Jeruk", "Mangga"]
+  // ["Apel", "Jeruk", "Mangga", "Anggur"]
+  ```
+
+  ```
   2. Mencari & Mengecek Elemen
-     - indexOf() → mencari indeks pertama dari elemen tertentu.
-     - lastIndexOf() → mencari indeks terakhir dari elemen tertentu.
-     - includes() → mengecek apakah elemen ada di array.
-     - find() → mengembalikan elemen pertama yang cocok dengan kondisi.
-     - findIndex() → mengembalikan indeks dari elemen yang cocok.
-     - every → mengecek apakah semua elemen benar bernilai true dan false jika ada satu yang salah.
-     - some → mengecek apakah ada satu elemen benar bernilai true dan false jika semua elemen salah.
+  ```
+  ```js
+  indexOf() → mencari indeks pertama dari elemen tertentu.
+
+  const fruits = ["Apel", "Jeruk", "Mangga"]; // Array awal.
+
+  // Cari indeks dari elemen "Jeruk".
+  const result = fruits.indexOf("Jeruk");
   
+  console.log(result);
+  
+  // Output:
+  // 1
+  ```
+  ```js
+  lastIndexOf() → mencari indeks terakhir dari elemen tertentu.
+
+  const fruits = ["Apel", "Jeruk", "Mangga", "Jeruk"]; // Array awal.
+
+  // Cari indeks terakhir dari elemen "Jeruk".
+  const result = fruits.lastIndexOf("Jeruk");
+  
+  console.log(result);
+  
+  // Output:
+  // 3
+  ```
+  ```js
+  includes() → mengecek apakah elemen ada di array.
+
+  const fruits = ["Apel", "Jeruk", "Mangga"]; // Array awal.
+
+  // Cek apakah array memiliki elemen "Jeruk".
+  const result = fruits.includes("Jeruk");
+  
+  console.log(result);
+  
+  // Output:
+  // true  
+  ```
+  ```js
+  find() → mengembalikan elemen pertama yang cocok dengan kondisi.
+
+  const numbers = [10, 20, 30, 40, 50]; // Array awal.
+
+  // Cari angka pertama yang lebih besar dari 25.
+  const result = numbers.find((number) => number > 25);
+  
+  console.log(result);
+  
+  // Output:
+  // 30
+  ```
+  ```js
+  findIndex() → mengembalikan indeks dari elemen yang cocok.
+
+  const numbers = [10, 20, 30, 40, 50]; // Array awal.
+
+  // Cari indeks dari angka pertama yang lebih besar dari 25.
+  const result = numbers.findIndex((number) => number > 25);
+  
+  console.log(result);
+  
+  // Output:
+  // 2
+  ```
+  ```js
+  every → mengecek apakah semua elemen benar bernilai true dan false jika ada satu yang salah.
+
+  const numbers = [10, 20, 30, 40]; // Array awal.
+
+  // Cek apakah semua angka lebih besar dari 5.
+  const result = numbers.every((number) => number > 5);
+  
+  console.log(result);
+  
+  // Output:
+  // true
+  ```
+  ```js
+  some → mengecek apakah ada satu elemen benar bernilai true dan false jika semua elemen salah.
+  
+  const numbers = [10, 20, 30, 40]; // Array awal.
+
+  // Cek apakah ada angka yang lebih besar dari 35.
+  const result = numbers.some((number) => number > 35);
+  
+  console.log(result);
+  
+  // Output:
+  // true
+  ```
+  
+  ```
   3. Transformasi & Iterasi
-     - map() → membuat array baru dengan hasil transformasi tiap elemen.
-     - forEach() → menjalankan fungsi untuk setiap elemen (tidak menghasilkan array baru).
-     - filter() → membuat array baru berisi elemen yang lolos kondisi.
-     - reduce() → menggabungkan semua elemen menjadi satu nilai (misalnya jumlah total).
-     - sort() → mengurutkan elemen.
-     - reverse() → membalik urutan elemen.
+  ```
+  ```js
+  map() → membuat array baru dengan hasil transformasi tiap elemen.
+
+  const numbers = [1, 2, 3, 4]; // Array awal.
+
+  // Kalikan setiap elemen dengan 2.
+  const result = numbers.map((number) => number * 2);
   
+  console.log(result);
+  
+  // Output:
+  // [2, 4, 6, 8]
+  ```
+  ```js
+  forEach() → menjalankan fungsi untuk setiap elemen (tidak menghasilkan array baru).
+
+  const numbers = [1, 2, 3, 4]; // Array awal.
+
+  // Jalankan fungsi untuk setiap elemen.
+  numbers.forEach((number) => {
+    console.log(number * 2); // Menampilkan hasil perkalian tiap elemen.
+  });
+  
+  // Output:
+  // 2
+  // 4
+  // 6
+  // 8
+  ```
+  ```js
+  filter() → membuat array baru berisi elemen yang lolos kondisi.
+
+  const numbers = [10, 20, 30, 40, 50]; // Array awal.
+
+  // Ambil angka yang lebih besar dari 25.
+  const result = numbers.filter((number) => number > 25);
+  
+  console.log(result);
+  
+  // Output:
+  // [30, 40, 50]
+  ```
+  ```js
+  reduce() → menggabungkan semua elemen menjadi satu nilai (misalnya jumlah total).
+
+  const numbers = [10, 20, 30, 40]; // Array awal.
+
+  // Jumlahkan semua elemen dalam array.
+  const result = numbers.reduce((total, number) => total + number, 0);
+  
+  console.log(result);
+  
+  // Output:
+  // 100
+  ```
+  ```js
+  sort() → mengurutkan elemen.
+
+  const numbers = [40, 10, 30, 20]; // Array awal.
+
+  // Urutkan dari kecil ke besar.
+  numbers.sort((a, b) => a - b);
+  
+  console.log(numbers);
+  
+  // Output:
+  // [10, 20, 30, 40]
+  ```
+  ```js
+  reverse() → membalik urutan elemen.
+
+  const fruits = ["Apel", "Jeruk", "Mangga"]; // Array awal.
+
+  // Balik urutan elemen array.
+  fruits.reverse();
+  
+  console.log(fruits);
+  
+  // Output:
+  // ["Mangga", "Jeruk", "Apel"]
+  ```
+  
+  ```
   4. Utility & Lainnya
-     - concat() → menggabungkan dua atau lebih array.
-     - join() → menggabungkan elemen menjadi string dengan separator tertentu.
-     - flat() → meratakan array bersarang (nested array).
-     - isArray() → mengecek apakah suatu variabel adalah array.
-     - toString() → mengubah array menjadi string.
+  ```
+  ```js
+  concat() → menggabungkan dua atau lebih array.
+
+  const fruits1 = ["Apel", "Jeruk"]; // Array pertama.
+  const fruits2 = ["Mangga", "Anggur"]; // Array kedua.
+  
+  // Gabungkan dua array menjadi satu.
+  const result = fruits1.concat(fruits2);
+  
+  console.log(result);
+  
+  // Output:
+  // ["Apel", "Jeruk", "Mangga", "Anggur"]
+  ```
+  ```js
+  join() → menggabungkan elemen menjadi string dengan separator tertentu.
+  
+  const fruits = ["Apel", "Jeruk", "Mangga"]; // Array awal.
+
+  // Gabungkan elemen dengan tanda koma.
+  const result = fruits.join(", ");
+  
+  console.log(result);
+  
+  // Output:
+  // "Apel, Jeruk, Mangga"
+  ```
+  ```js
+  flat() → meratakan array bersarang (nested array).
+
+  const numbers = [1, [2, 3], [4, [5, 6]]]; // Array bersarang.
+
+  // Ratakan array sampai 1 level.
+  const result = numbers.flat();
+  
+  console.log(result);
+  
+  // Output:
+  // [1, 2, 3, 4, [5, 6]]
+  ```
+  ```js
+  isArray() → mengecek apakah suatu variabel adalah array.
+
+  const fruits = ["Apel", "Jeruk", "Mangga"]; // Array
+  const text = "Hello JavaScript"; // String
+  
+  // Cek apakah fruits adalah array.
+  const result1 = Array.isArray(fruits);
+  
+  // Cek apakah text adalah array.
+  const result2 = Array.isArray(text);
+  
+  console.log(result1);
+  console.log(result2);
+  
+  // Output:
+  // true
+  // false
+  ```
+  ```js
+  toString() → mengubah array menjadi string.
+
+  const fruits = ["Apel", "Jeruk", "Mangga"]; // Array awal.
+
+  // Ubah array menjadi string (dipisahkan koma otomatis).
+  const result = fruits.toString();
+  
+  console.log(result);
+  
+  // Output:
+  // "Apel,Jeruk,Mangga"
   ```
     
   ---
