@@ -107,9 +107,7 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
   - NaN (Not-a-Number) → hasil operasi matematika yang tidak valid, contoh: 0/0.
   ```
 
-  ```
-  1. Instance Method (dipanggil dari angkanya)
-  ```
+  - **1. Instance Method (dipanggil dari angkanya)** 📎
   ```js
   toFixed() → Mengatur jumlah angka di belakang koma.
   
@@ -168,10 +166,8 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
   console.log(indonesia); // "1.500.000"
   console.log(america); // "1,500,000"
   ```
-  
-  ```
-  2. Static Method (dipanggil dari Number)
-  ```
+
+  - **2. Static Method (dipanggil dari Number)** 📎
   ```js
   Number.isInteger() → Digunakan untuk mengecek apakah sebuah nilai merupakan bilangan bulat (integer).
   
@@ -266,10 +262,8 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
   \b → backspace.
   \uXXXX → Unicode.
   ```
-  
-  ```
-  1. Method Pencarian (Searching)
-  ```
+
+  - **1. Method Pencarian (Searching)** 📎
   ```js
   includes() → Mengecek apakah string mengandung teks tertentu.
 
@@ -349,9 +343,7 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
   // 12 
   ```
   
-  ```
-  2. Method Mengambil Sebagian String (Extracting)
-  ```
+  - **2. Method Mengambil Sebagian String (Extracting)** 📎
   ```js
   slice() → Mengambil sebagian string berdasarkan indeks.
 
@@ -404,10 +396,8 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
   // Output:
   // S
   ```
-  
-  ```
-  3. Method Mengubah Isi String (Manipulation)
-  ```
+
+  - **3. Method Mengubah Isi String (Manipulation)** 📎
   ```js
   replace() → Mengganti kemunculan pertama teks yang cocok.
 
@@ -461,10 +451,8 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
   // Output:
   // ⭐⭐⭐⭐⭐
   ```
-  
-  ```
-  4. Method Mengubah Huruf (Case Conversion)
-  ```
+
+  - **4. Method Mengubah Huruf (Case Conversion)** 📎
   ```js
   toUpperCase() → Mengubah semua huruf menjadi kapital.
 
@@ -491,10 +479,8 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
   // Output:
   // user@gmail.com
   ```
-  
-  ```
-  5. Method Menghapus Spasi (Trimming)
-  ```
+
+  - **5. Method Menghapus Spasi (Trimming)** 📎
   ```js
   trim() → Menghapus spasi di awal dan akhir string.
 
@@ -534,10 +520,8 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
   // Output:
   // "risqi"
   ```
-  
-  ```
-  6. Method Memisahkan String (Split)
-  ```
+
+  - **6. Method Memisahkan String (Split)** 📎
   ```js
   split() → Memisahkan string menjadi array berdasarkan pemisah tertentu.
 
@@ -551,10 +535,8 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
   // Output:
   // ["Apel", "Jeruk", "Mangga"]
   ```
-  
-  ```
-  7. Method Konversi
-  ```
+
+  - **7. Method Konversi** 📎
   ```js
   valueOf() → Mengembalikan nilai asli (primitive value) dari string.
 
@@ -585,10 +567,8 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
   // JavaScript
   // string
   ```
-  
-  ```
-  8. Method Static (String)
-  ```
+
+  - **8. Method Static (String)** 📎
   ```js
   String.fromCharCode() → Membuat string dari kode karakter Unicode.
 
@@ -634,10 +614,8 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
   OR || → bernilai true jika salah satu kondisi benar.
   NOT ! → membalik nilai Boolean.
   ```
-  
-  ```
-  1. Method Boolean
-  ```
+
+  - **1. Method Boolean** 📎
   ```js
   toString() → Digunakan untuk mengubah nilai boolean menjadi string.
 
@@ -726,10 +704,8 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
     // pemanggilan function menggunakan nama function itu sendiri
     console.log(kali(4, 6)); // Output: 24
     ```
-    
-  ```
-  1. Method Pemanggilan Function (Function Invocation)
-  ```
+
+  - **1. Method Pemanggilan Function (Function Invocation)** 📎
   ```js
   call() → Memanggil function dengan this dan argumen satu per satu.
   
@@ -764,10 +740,8 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
   // Output:
   // Halo, saya Risqi dari Bandung, Indonesia
   ```
-  
-  ```
-  2. Method Binding Function
-  ```
+
+  - **2. Method Binding Function** 📎
   ```js
   bind() → Membuat function baru dengan nilai this yang sudah ditentukan.
 
@@ -788,10 +762,8 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
   // Output:
   // Halo, saya Risqi
   ```
-  
-  ```
-  3. Method Warisan dari Object (Jarang dibahas)
-  ```
+
+  - **3. Method Warisan dari Object (Jarang dibahas)** 📎
   ```js
   toString() → Mengembalikan source code function dalam bentuk string.
   
@@ -865,10 +837,8 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
     // Array ini berisi 3 elemen string: "apel", "jeruk", "mangga"
     // Index dimulai dari 0 → buah[0] = "apel", buah[1] = "jeruk", buah[2] = "mangga"
     ```
-  
-  ```
-  1. Menambah & Menghapus Elemen
-  ```
+
+  - **1. Menambah & Menghapus Elemen** 📎
   ```js
   push() → menambah elemen di akhir array.
 
@@ -950,9 +920,7 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
   // ["Apel", "Jeruk", "Mangga", "Anggur"]
   ```
 
-  ```
-  2. Mencari & Mengecek Elemen
-  ```
+  - **2. Mencari & Mengecek Elemen** 📎
   ```js
   indexOf() → mencari indeks pertama dari elemen tertentu.
 
@@ -1044,10 +1012,8 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
   // Output:
   // true
   ```
-  
-  ```
-  3. Transformasi & Iterasi
-  ```
+
+  - **3. Transformasi & Iterasi** 📎
   ```js
   map() → membuat array baru dengan hasil transformasi tiap elemen.
 
@@ -1130,9 +1096,7 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
   // ["Mangga", "Jeruk", "Apel"]
   ```
   
-  ```
-  4. Utility & Lainnya
-  ```
+  - **4. Utility & Lainnya** 📎
   ```js
   concat() → menggabungkan dua atau lebih array.
 
@@ -1229,7 +1193,8 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
     
     console.log(mobil.brand); // Toyota
     console.log(mobil["tahun"]); // Supra
-
+    ```
+    
   ---
 
   - **Keyword New Object()** 📎
@@ -1248,7 +1213,8 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
     
     console.log(person);
     // { nama: 'Dani', umur: 25, kota: 'Jakarta' }
-
+    ```
+    
   ---
     
   - **Constructor Function** 📎
@@ -1272,7 +1238,8 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
     
     console.log(mhs1.sapa()); // Halo, saya Dani dari jurusan Informatika
     console.log(mhs2.sapa()); // Halo, saya Dina dari jurusan Desain
-
+    ```
+    
   ---
 
   - **Class (ES6)** 📎
@@ -1300,7 +1267,8 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
     
     console.log(mhs1.sapa()); // Halo, saya Dani dari jurusan Informatika
     console.log(mhs2.sapa()); // Halo, saya Dina dari jurusan Desain
-
+    ```
+    
   ---
 
   - **Object.create()** 📎
@@ -1323,7 +1291,8 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
     console.log(kucing.nama);          // Kitty
     console.log(kucing.bisaBergerak);  // true (warisan dari hewan)
     console.log(kucing.makan());       // Hewan sedang makan
-
+    ```
+    
   ---
 
   - **Factory Function** 📎
@@ -1349,7 +1318,8 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
     
     console.log(mhs1.sapa()); // Halo, saya Dani dari jurusan Informatika
     console.log(mhs2.sapa()); // Halo, saya Dina dari jurusan Desain
-
+    ```
+    
 ---
 
 ## 🔣 Penjelasan Operator
