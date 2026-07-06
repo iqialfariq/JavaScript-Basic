@@ -855,7 +855,7 @@ const
   - Terurut: Data disusun berdasarkan urutan indeks.
   ```
   
-  - **Cara Menuliskan Array** 📎
+  **Cara Menuliskan Array** 📎
     ```js
     // Membuat array dengan cara literal (paling umum)
     let buah = ["apel", "jeruk", "mangga"];
@@ -863,7 +863,7 @@ const
     // Index dimulai dari 0 → buah[0] = "apel", buah[1] = "jeruk", buah[2] = "mangga"
     ```
 
----
+  ---
   
   **1. Menambah & Menghapus Elemen** 📎
   ```js
