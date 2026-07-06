@@ -1,15 +1,14 @@
 # 🧠 Penjelasan JavaScript
 <p align="justify">
-JavaScript (disingkat JS) adalah bahasa pemrograman yang digunakan terutama untuk membuat halaman web menjadi dinamis dan interaktif, bekerja bersama HTML (struktur) dan CSS (desain). JavaScript dibuat
-oleh Brendan Eich pada tahun 1995 saat ia bekerja di Netscape Communications. ada 2 cara untuk menyimpan file javascript internal js dan external js.
+JavaScript (disingkat JS) adalah bahasa pemrograman yang digunakan terutama untuk membuat halaman web menjadi dinamis dan interaktif, bekerja bersama
+HTML (struktur) dan CSS (desain). JavaScript dibuat oleh Brendan Eich pada tahun 1995 saat ia bekerja di Netscape Communications. ada 2 cara untuk
+menyimpan file javascript internal js dan external js.
 </p>
 
 ---
 
 - **Internal JavaScript** 📎
-  <p align="justify">
-  Menyisipkan isi code javascript di dalam tag <script>...</script> pada html.
-  </p>
+  <p align="justify">Menyisipkan isi code javascript di dalam tag <script>...</script> pada html.</p>
   
   ```html
     <script>
@@ -22,9 +21,7 @@ oleh Brendan Eich pada tahun 1995 saat ia bekerja di Netscape Communications. ad
   ---
 
 - **External JavaScript** 📎
-  <p align="justify">
-  Menyisipkan src"..." di dalam tag <script>...</script> pada html.
-  </p>
+  <p align="justify">Menyisipkan src"..." di dalam tag <script>...</script> pada html.</p>
   
   ```html
     <script src="script.js"></script>
@@ -36,24 +33,24 @@ oleh Brendan Eich pada tahun 1995 saat ia bekerja di Netscape Communications. ad
 
 ```
 alert (Digunakan untuk menampilkan pesan sederhana).
-cara menggunakan | alert('pesan');
+cara menggunakan → alert('pesan');
 
 prompt (Digunakan untuk meminta input teks dari pengguna).
-cara menggunakan | prompt('pesan');
+cara menggunakan → prompt('pesan');
 
 confirm (Digunakan untuk meminta konfirmasi dari pengguna).
-cara menggunakan | confirm('pesan');
+cara menggunakan → confirm('pesan');
 
 console.log (Digunakan untuk menampilkan pesan atau nilai ke console. Biasanya digunakan untuk debuging).
-cara menggunakan | console.log('pesan');
+cara menggunakan → console.log('pesan');
 ```
 
 ---
 
 ## 📝 Penjelasan Variabel
 <p align="justify"> 
-Variabel adalah wadah untuk menyimpan data yang bisa digunakan dan dimanipulasi dalam program. Dengan variabel, kita bisa memberi nama pada sebuah nilai agar mudah dipanggil kembali.
-Ada 3 cara untuk mendeklarasikan variable yaitu:
+Variabel adalah wadah untuk menyimpan data yang bisa digunakan dan dimanipulasi dalam program. Dengan variabel, kita bisa memberi nama pada sebuah
+nilai agar mudah dipanggil kembali. Ada 3 cara untuk mendeklarasikan variable yaitu:
 </p>
 
 ```
@@ -83,19 +80,17 @@ const
 ---
 
 ## 🧩 Penjelasan Tipe Data
-<p align="justify"> 
-Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primitive (Reference) types.
-</p>
+<p align="justify">Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primitive (Reference) types.</p>
 
 
 ### 📌 Tipe Data Primitive Types
 
-  ---
+---
   
 - **Number** 📎
   <p align="justify">  
-  Number adalah tipe data primitif yang digunakan untuk merepresentasikan angka, baik bilangan bulat (integer) maupun bilangan pecahan (floating point). Semua angka di JavaScript (kecuali BigInt) disimpan
-  dalam format 64-bit floating point (IEEE 754).
+  Number adalah tipe data primitif yang digunakan untuk merepresentasikan angka, baik bilangan bulat (integer) maupun bilangan pecahan (floating
+  point). Semua angka di JavaScript (kecuali BigInt) disimpan dalam format 64-bit floating point (IEEE 754).
   </p>
   
   ```
@@ -246,13 +241,14 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
   // Output:
   // 65.5
   ```
-  
-  ---
+
+---
   
 - **String** 📎
   <p align="justify">  
-  Tipe data String di JavaScript adalah tipe data primitif yang digunakan untuk menyimpan teks, yaitu kumpulan karakter. String bisa berupa huruf, angka, simbol, atau bahkan emoji, selama diapit oleh
-  tanda kutip tunggal ('...'), tanda kutip ganda ("..."), atau template literal dengan backtick (`...`).
+  Tipe data String di JavaScript adalah tipe data primitif yang digunakan untuk menyimpan teks, yaitu kumpulan karakter. String bisa berupa huruf,
+  angka, simbol, atau bahkan emoji, selama diapit oleh tanda kutip tunggal ('...'), tanda kutip ganda ("..."), atau template literal dengan backtick
+  (`...`).
   </p>
   
   ```
@@ -620,12 +616,12 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
   // C:\Users\Risqi\Documents
   ```
 
-  ---
+---
 
 - **Boolean** 📎
   <p align="justify">  
-  Tipe data Boolean di JavaScript adalah salah satu tipe data primitif yang hanya memiliki dua nilai: true atau false. Boolean biasanya digunakan untuk logika, pengambilan keputusan, dan kondisi dalam
-  program.
+  Tipe data Boolean di JavaScript adalah salah satu tipe data primitif yang hanya memiliki dua nilai: true atau false. Boolean biasanya digunakan
+  untuk logika, pengambilan keputusan, dan kondisi dalam program.
   </p>
   
   ```
@@ -673,15 +669,16 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
 
 - **Null** 📎
   <p align="justify">  
-  Null adalah sebuah nilai khusus dalam pemrograman yang menandakan bahwa sebuah variabel tidak memiliki nilai atau kosong. Biasanya dipakai dalam situasi di mana kita ingin menandai bahwa sebuah variabel
-  belum memiliki nilai atau tidak ada data yang relevan.
+  Null adalah sebuah nilai khusus dalam pemrograman yang menandakan bahwa sebuah variabel tidak memiliki nilai atau kosong. Biasanya dipakai dalam
+  situasi di mana kita ingin menandai bahwa sebuah variabel belum memiliki nilai atau tidak ada data yang relevan.
   </p>
 
   ---
 
 - **Undefined** 📎
   <p align="justify">  
-  Undefined adalah tipe data primitif di JavaScript. Nilai ini muncul ketika sebuah variabel sudah dideklarasikan tetapi belum diberi nilai. Jadi, undefined berarti "variabel ada, tapi belum ada isi".
+  Undefined adalah tipe data primitif di JavaScript. Nilai ini muncul ketika sebuah variabel sudah dideklarasikan tetapi belum diberi nilai. Jadi,
+  undefined berarti "variabel ada, tapi belum ada isi".
   </p>  
 
 
@@ -691,8 +688,8 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
   
 - **Function** 📎
   <p align="justify">  
-  Function di JavaScript adalah sebuah blok kode yang bisa dipanggil berulang kali untuk menjalankan tugas tertentu. Jadi, daripada menulis ulang kode yang sama, kita bungkus dalam function lalu tinggal
-  memanggilnya kapan saja.
+  Function di JavaScript adalah sebuah blok kode yang bisa dipanggil berulang kali untuk menjalankan tugas tertentu. Jadi, daripada menulis ulang kode
+  yang sama, kita bungkus dalam function lalu tinggal memanggilnya kapan saja.
   </p>
 
   ```
@@ -840,13 +837,13 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
   // Output:
   // true
   ```
-  
-  ---
+
+---
 
 - **Array** 📎
   <p align="justify">  
-  Array pada JavaScript adalah struktur data yang digunakan untuk menyimpan sekumpulan nilai dalam satu variabel, dengan urutan tertentu dan indeks yang dimulai dari 0. Jadi, alih-alih membuat banyak
-  variabel untuk setiap data, kita bisa mengelompokkan semuanya dalam satu array.
+  Array pada JavaScript adalah struktur data yang digunakan untuk menyimpan sekumpulan nilai dalam satu variabel, dengan urutan tertentu dan indeks
+  yang dimulai dari 0. Jadi, alih-alih membuat banyak variabel untuk setiap data, kita bisa mengelompokkan semuanya dalam satu array.
   </p>
 
   ```
@@ -866,7 +863,7 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
     // Index dimulai dari 0 → buah[0] = "apel", buah[1] = "jeruk", buah[2] = "mangga"
     ```
 
-  ---
+---
   
   **1. Menambah & Menghapus Elemen** 📎
   ```js
@@ -1206,7 +1203,7 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
   // "Apel,Jeruk,Mangga"
   ```
     
-  ---
+---
 
 - **Object** 📎
   <p align="justify">  
@@ -1215,9 +1212,7 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
   </p>
   
   - **Object Literal** 📎
-    <p align="justify">
-      Digunakan untuk data sederhana & statis.
-    </p>
+    <p align="justify">Digunakan untuk data sederhana & statis.</p>
     
     ```js
     const mobil = {
@@ -1231,12 +1226,10 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
     console.log(mobil["tahun"]); // Supra
     ```
     
-  ---
+    ---
 
   - **Keyword New Object()** 📎
-    <p align="justify">
-        Digunakan untuk gaya lama dan library / framework jadul.
-    </p>
+    <p align="justify">Digunakan untuk gaya lama dan library / framework jadul.</p>
     
     ```js
     // bikin object kosong dulu
@@ -1251,12 +1244,10 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
     // { nama: 'Dani', umur: 25, kota: 'Jakarta' }
     ```
     
-  ---
+    ---
     
   - **Constructor Function** 📎
-    <p align="justify">
-        Digunakan untuk buat banyak object dengan struktur sama.
-    </p>
+    <p align="justify">Digunakan untuk buat banyak object dengan struktur sama.</p>
     
     ```js
     // Constructor Function
@@ -1276,12 +1267,10 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
     console.log(mhs2.sapa()); // Halo, saya Dina dari jurusan Desain
     ```
     
-  ---
+    ---
 
   - **Class (ES6)** 📎
-    <p align="justify">
-        Digunakan untuk buat banyak object dengan pola sama dan lebih modern.
-    </p>
+    <p align="justify">Digunakan untuk buat banyak object dengan pola sama dan lebih modern.</p>
     
     ```js
     // Definisi Class
@@ -1305,12 +1294,10 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
     console.log(mhs2.sapa()); // Halo, saya Dina dari jurusan Desain
     ```
     
-  ---
+    ---
 
   - **Object.create()** 📎
-    <p align="justify">
-        Digunakan untuk buat object dengan prototype custom tanpa class.
-    </p>
+    <p align="justify">Digunakan untuk buat object dengan prototype custom tanpa class.</p>
     
     ```js
     const hewan = {
@@ -1329,7 +1316,7 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
     console.log(kucing.makan());       // Hewan sedang makan
     ```
     
-  ---
+    ---
 
   - **Factory Function** 📎
     <p align="justify">
@@ -1358,7 +1345,37 @@ Tipe data JavaScript memiliki dua kategori yaitu: Primitive types dan Non-primit
     
 ---
 
-  **4. Utility & Lainnya** 📎
+  **1. Mengambil Data (Read Data)** 📎
+  ```js
+  concat() → menggabungkan dua atau lebih array.
+
+  ```
+
+  **2. Membuat atau Mengubah Object (Create / Modify)** 📎
+  ```js
+  concat() → menggabungkan dua atau lebih array.
+
+  ```
+
+  **3. Validasi / Pengecekan (Checking)** 📎
+  ```js
+  concat() → menggabungkan dua atau lebih array.
+
+  ```
+
+  **4. Keamanan Object (Protection)** 📎
+  ```js
+  concat() → menggabungkan dua atau lebih array.
+
+  ```
+
+  **5. Property Descriptor (Advanced)** 📎
+  ```js
+  concat() → menggabungkan dua atau lebih array.
+
+  ```
+
+  **6. Informasi Tentang Object (Metadata)** 📎
   ```js
   concat() → menggabungkan dua atau lebih array.
 
