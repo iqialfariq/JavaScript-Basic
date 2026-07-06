@@ -665,7 +665,7 @@ const
   // "boolean"
   ```
   
-  ---
+---
 
 - **Null** 📎
   <p align="justify">  
@@ -673,7 +673,7 @@ const
   situasi di mana kita ingin menandai bahwa sebuah variabel belum memiliki nilai atau tidak ada data yang relevan.
   </p>
 
-  ---
+---
 
 - **Undefined** 📎
   <p align="justify">  
@@ -684,7 +684,7 @@ const
 
 ### 📌 Tipe Data Non Primitive Types
 
-  ---
+---
   
 - **Function** 📎
   <p align="justify">  
@@ -700,7 +700,7 @@ const
   - Pemanggilan (call): Menjalankan function dengan menuliskan namanya.
   ```
   
-  - **Function Declaration** 📎
+  **Function Declaration** 📎
     ```js
     // Berikan inisialisasi nama pada function
     function tambah(a, b) {
@@ -712,7 +712,7 @@ const
     console.log(tambah(5, 7)); // Output: 12
     ```
 
-  - **Function Expression** 📎
+  **Function Expression** 📎
     ```js
     // Berikan inisialisasi pada variabel
     const kali = function(a, b) {
@@ -1211,7 +1211,7 @@ const
   merepresentasikan sesuatu yang kompleks seperti mobil, pengguna, atau produk. Cara membuat object secara umum ada 6 yaitu:
   </p>
   
-  - **Object Literal** 📎
+  **Object Literal** 📎
     <p align="justify">Digunakan untuk data sederhana & statis.</p>
     
     ```js
@@ -1228,7 +1228,7 @@ const
     
     ---
 
-  - **Keyword New Object()** 📎
+  **Keyword New Object()** 📎
     <p align="justify">Digunakan untuk gaya lama dan library / framework jadul.</p>
     
     ```js
@@ -1246,7 +1246,7 @@ const
     
     ---
     
-  - **Constructor Function** 📎
+  **Constructor Function** 📎
     <p align="justify">Digunakan untuk buat banyak object dengan struktur sama.</p>
     
     ```js
@@ -1269,7 +1269,7 @@ const
     
     ---
 
-  - **Class (ES6)** 📎
+  **Class (ES6)** 📎
     <p align="justify">Digunakan untuk buat banyak object dengan pola sama dan lebih modern.</p>
     
     ```js
@@ -1296,7 +1296,7 @@ const
     
     ---
 
-  - **Object.create()** 📎
+  **Object.create()** 📎
     <p align="justify">Digunakan untuk buat object dengan prototype custom tanpa class.</p>
     
     ```js
@@ -1318,7 +1318,7 @@ const
     
     ---
 
-  - **Factory Function** 📎
+  **Factory Function** 📎
     <p align="justify">
         Digunakan untuk buat object tanpa ribet pakai new.
     </p>
@@ -1347,43 +1347,439 @@ const
 
   **1. Mengambil Data (Read Data)** 📎
   ```js
-  concat() → menggabungkan dua atau lebih array.
+  Object.keys() → Mengambil semua key
 
+  // Membuat sebuah object
+  const mahasiswa = {
+    nama: "Risqi",
+    umur: 20,
+    jurusan: "Informatika",
+  };
+  
+  // Object.keys() mengambil semua key dari object
+  const keys = Object.keys(mahasiswa);
+  
+  // Menampilkan hasilnya
+  console.log(keys);
+  
+  // Output:
+  // ["nama", "umur", "jurusan"]
   ```
+  ```js
+  Object.values() → Mengambil semua value
+
+  // Membuat sebuah object
+  const mahasiswa = {
+    nama: "Risqi",
+    umur: 20,
+    jurusan: "Informatika",
+  };
+  
+  // Object.values() mengambil semua value dari object
+  const values = Object.values(mahasiswa);
+  
+  // Menampilkan hasilnya
+  console.log(values);
+  
+  // Output:
+  // ["Risqi", 20, "Informatika"]
+  ```
+  ```js
+  Object.entries() → Mengambil key dan value
+
+  // Membuat sebuah object
+  const mahasiswa = {
+    nama: "Risqi",
+    umur: 20,
+    jurusan: "Informatika",
+  };
+  
+  // Object.entries() mengambil semua key dan value
+  const entries = Object.entries(mahasiswa);
+  
+  // Menampilkan hasilnya
+  console.log(entries);
+  
+  // Output:
+  // [
+  //   ["nama", "Risqi"],
+  //   ["umur", 20],
+  //   ["jurusan", "Informatika"]
+  // ]
+  ```
+  ```js
+  Object.getOwnPropertyNames() → Mengambil semua nama property
+
+  // Membuat sebuah object
+  const mahasiswa = {
+    nama: "Risqi",
+    umur: 20,
+    jurusan: "Informatika",
+  };
+  
+  // Mengambil semua nama property
+  const properties = Object.getOwnPropertyNames(mahasiswa);
+  
+  // Menampilkan hasilnya
+  console.log(properties);
+  
+  // Output:
+  // ["nama", "umur", "jurusan"]
+  ```
+
+  ---
 
   **2. Membuat atau Mengubah Object (Create / Modify)** 📎
   ```js
-  concat() → menggabungkan dua atau lebih array.
+  Object.assign() → Menggabungkan object
 
+  // Object pertama
+  const dataPribadi = {
+    nama: "Risqi",
+    umur: 20,
+  };
+  
+  // Object kedua
+  const dataPekerjaan = {
+    pekerjaan: "Frontend Developer",
+    kota: "Bandung",
+  };
+  
+  // Object.assign() menggabungkan kedua object
+  // {} digunakan sebagai target agar object asli tidak berubah
+  const hasil = Object.assign({}, dataPribadi, dataPekerjaan);
+  
+  // Menampilkan hasil gabungan
+  console.log(hasil);
+  
+  // Output:
+  // {
+  //   nama: "Risqi",
+  //   umur: 20,
+  //   pekerjaan: "Frontend Developer",
+  //   kota: "Bandung"
+  // }
+  
+  // Object asli tetap tidak berubah
+  console.log(dataPribadi);
+  
+  console.log(dataPekerjaan);
   ```
+  ```js
+  Object.create() → Membuat object baru dari prototype
+
+  // Object yang akan dijadikan prototype
+  const manusia = {
+    makan() {
+      console.log("Sedang makan...");
+    },
+  };
+  
+  // Membuat object baru dari prototype manusia
+  const risqi = Object.create(manusia);
+  
+  // Memanggil method yang berasal dari prototype
+  risqi.makan();
+  
+  // Output:
+  // Sedang makan...
+  ```
+  ```js
+  Object.fromEntries() → Mengubah array menjadi object
+
+  // Array yang berisi pasangan [key, value]
+  const data = [
+    ["nama", "Risqi"],
+    ["umur", 20],
+    ["jurusan", "Informatika"],
+  ];
+  
+  // Mengubah array menjadi object
+  const mahasiswa = Object.fromEntries(data);
+  
+  console.log(mahasiswa);
+  
+  // Output:
+  // {
+  //   nama: "Risqi",
+  //   umur: 20,
+  //   jurusan: "Informatika"
+  // }
+  ```
+  ```js
+  ... (Spread Operator) → Menyalin atau menggabungkan object
+
+  // Object asli
+  const mahasiswa = {
+    nama: "Risqi",
+    umur: 20,
+    jurusan: "Informatika",
+  };
+  
+  // Membuat salinan object menggunakan Spread Operator
+  const copyMahasiswa = {
+    ...mahasiswa,
+  };
+  
+  // Menampilkan hasil salinan
+  console.log(copyMahasiswa);
+  
+  // Output:
+  // {
+  //   nama: "Risqi",
+  //   umur: 20,
+  //   jurusan: "Informatika"
+  // }
+  
+  // Object asli tetap tidak berubah
+  console.log(mahasiswa);
+  ```
+
+  ---
 
   **3. Validasi / Pengecekan (Checking)** 📎
   ```js
-  concat() → menggabungkan dua atau lebih array.
+  Object.hasOwn() → Mengecek apakah property ada
 
+  // Membuat sebuah object
+  const mahasiswa = {
+    nama: "Risqi",
+    umur: 20,
+    jurusan: "Informatika",
+  };
+  
+  // Mengecek apakah property "nama" dimiliki object
+  console.log(Object.hasOwn(mahasiswa, "nama"));
+  
+  // Output:
+  // true
+  
+  // Mengecek property "alamat"
+  console.log(Object.hasOwn(mahasiswa, "alamat"));
+  
+  // Output:
+  // false
   ```
+  ```js
+  Object.is() → Membandingkan dua nilai
+
+  // Membandingkan dua angka yang sama
+  console.log(Object.is(10, 10));
+  
+  // Output:
+  // true
+  
+  // Membandingkan dua string yang sama
+  console.log(Object.is("Risqi", "Risqi"));
+  
+  // Output:
+  // true
+  ```
+
+  ---
 
   **4. Keamanan Object (Protection)** 📎
   ```js
-  concat() → menggabungkan dua atau lebih array.
+  Object.freeze() → Tidak bisa diubah sama sekali
 
+  // Membuat object
+  const mahasiswa = {
+    nama: "Risqi",
+    umur: 20,
+  };
+  
+  // Mengunci object
+  Object.freeze(mahasiswa);
+  
+  // Mencoba mengubah property
+  mahasiswa.nama = "Budi";
+  
+  // Nilai tidak berubah
+  console.log(mahasiswa.nama);
+  
+  // Output:
+  // Risqi
+  ```
+  ```js
+  Object.seal() → Tidak bisa tambah/hapus property
+
+  // Membuat object
+  const mahasiswa = {
+    nama: "Risqi",
+    umur: 20,
+  };
+  
+  // Mengunci struktur object
+  Object.seal(mahasiswa);
+  
+  // Mengubah value property yang sudah ada
+  mahasiswa.nama = "Budi";
+  
+  // Berhasil diubah
+  console.log(mahasiswa);
+  
+  // Output:
+  // {
+  //   nama: "Budi",
+  //   umur: 20
+  // }
   ```
 
   **5. Property Descriptor (Advanced)** 📎
   ```js
-  concat() → menggabungkan dua atau lebih array.
+  Object.defineProperty() → Membuat atau mengatur satu property
 
+  // Data user
+  const user = {};
+  
+  // Membuat property id
+  Object.defineProperty(user, "id", {
+    // Nilai id
+    value: 1001,
+  
+    // Tidak boleh diubah
+    writable: false,
+  
+    // Tetap muncul saat Object.keys()
+    enumerable: true,
+  
+    // Masih boleh dihapus
+    configurable: true,
+  });
+  
+  console.log(user.id);
+  
+  // Mencoba mengubah id
+  user.id = 2000;
+  
+  console.log(user.id);
+  
+  // Output:
+  // 1001  
+  ```
+  ```js
+  Object.defineProperties() → Mengatur banyak property sekaligus
+
+  // Menambahkan beberapa property sekaligus
+  Object.defineProperties(user, {
+    nama: {
+      value: "Risqi",
+      writable: true,
+      enumerable: true,
+      configurable: true,
+    },
+  
+    umur: {
+      value: 20,
+      writable: true,
+      enumerable: true,
+      configurable: true,
+    },
+  
+    pekerjaan: {
+      value: "Frontend Developer",
+      writable: true,
+      enumerable: true,
+      configurable: true,
+    },
+  });
+  
+  console.log(user);
+  
+  // Output:
+  // {
+  //   nama: "Risqi",
+  //   umur: 20,
+  //   pekerjaan: "Frontend Developer"
+  // }
+  ```
+  ```js
+  Object.getOwnPropertyDescriptor() → Melihat konfigurasi sebuah property
+
+  // Membuat object
+  const user = {
+    nama: "Risqi",
+  };
+  
+  // Melihat konfigurasi property "nama"
+  const descriptor = Object.getOwnPropertyDescriptor(user, "nama");
+  
+  console.log(descriptor);
+  
+  // Output:
+  // {
+  //   value: "Risqi",
+  //   writable: true,
+  //   enumerable: true,
+  //   configurable: true
+  // }
   ```
 
   **6. Informasi Tentang Object (Metadata)** 📎
   ```js
-  concat() → menggabungkan dua atau lebih array.
+  Object.isFrozen() → Apakah object di-freeze?
 
+  // Membuat object
+  const user = {
+    nama: "Risqi",
+  };
+  
+  // Mengunci object
+  Object.freeze(user);
+  
+  // Mengecek status object
+  console.log(Object.isFrozen(user));
+  
+  // Output:
+  // true
+  // Setelah memanggil Object.freeze(user), object menjadi tidak bisa diubah, sehingga Object.isFrozen() mengembalikan true.
+  ```
+  ```js
+  Object.isSealed() → Apakah object di-seal?
+  
+  // Membuat object
+  const user = {
+    nama: "Risqi",
+  };
+  
+  // Mengecek apakah object sudah di-seal
+  console.log(Object.isSealed(user));
+  
+  // Output:
+  // false
+  ```
+  ```js
+  Object.isExtensible() → Apakah object masih bisa ditambah property?
+
+  // Membuat object
+  const user = {
+    nama: "Risqi",
+  };
+  
+  // Mengecek apakah object masih bisa ditambah property
+  console.log(Object.isExtensible(user));
+  
+  // Output:
+  // true
+  
+  // Karena masih extensible,
+  // kita bisa menambahkan property baru
+  user.umur = 20;
+  
+  console.log(user);
+  
+  // Output:
+  // {
+  //   nama: "Risqi",
+  //   umur: 20
+  // }
+  // Secara default, semua object di JavaScript bersifat extensible, artinya masih bisa ditambah property baru.
   ```
 
 ## 🔣 Penjelasan Operator
 <p align="justify"> 
-Operator adalah simbol khusus yang digunakan untuk melakukan operasi pada nilai atau variabel. JavaScript menyediakan berbagai jenis operator sesuai kebutuhan diantaranya ada 7 jenis yaitu:
+Operator adalah simbol khusus yang digunakan untuk melakukan operasi pada nilai atau variabel. JavaScript menyediakan berbagai jenis operator sesuai
+kebutuhan diantaranya ada 7 jenis yaitu:
 </p>
 
 - **Operator Aritmatika** 📎
@@ -1502,13 +1898,14 @@ Operator adalah simbol khusus yang digunakan untuk melakukan operasi pada nilai 
 
 ## 🔀 Penjelasan Control Flow
 <p align="justify"> 
-Control flow pada JavaScript adalah cara mengatur urutan eksekusi kode. Secara default, kode dijalankan dari atas ke bawah, tetapi dengan control flow statements kita bisa membuat percabangan, perulangan,
-dan penanganan error. Jenis Control Flow di JavaScrip ada 2 yaitu pengulangan dan pengkondisian.
+Control flow pada JavaScript adalah cara mengatur urutan eksekusi kode. Secara default, kode dijalankan dari atas ke bawah, tetapi dengan control flow
+statements kita bisa membuat percabangan, perulangan, dan penanganan error. Jenis Control Flow di JavaScrip ada 2 yaitu pengulangan dan pengkondisian.
 </p>
 
 - **For** 📎
   <p align="justify">  
-  For loop di JavaScript adalah salah satu bentuk control flow yang digunakan untuk menjalankan blok kode berulang kali dengan jumlah yang sudah ditentukan.
+  For loop di JavaScript adalah salah satu bentuk control flow yang digunakan untuk menjalankan blok kode berulang kali dengan jumlah yang sudah
+  ditentukan.
   </p>
   
   ```js
@@ -1522,6 +1919,7 @@ dan penanganan error. Jenis Control Flow di JavaScrip ada 2 yaitu pengulangan da
     - Perulangan ke-3
     - Perulangan ke-4
     - Perulangan ke-5
+  ```
   
 ---
    
@@ -1544,12 +1942,14 @@ dan penanganan error. Jenis Control Flow di JavaScrip ada 2 yaitu pengulangan da
     - Perulangan ke-3
     - Perulangan ke-4
     - Perulangan ke-5
-
+  ```
+  
 ---
    
 - **Do While** 📎
   <p align="justify">  
-  Do...While pada JavaScript adalah salah satu bentuk loop (perulangan) yang memastikan blok kode dijalankan setidaknya sekali, sebelum memeriksa kondisi.
+  Do...While pada JavaScript adalah salah satu bentuk loop (perulangan) yang memastikan blok kode dijalankan setidaknya sekali, sebelum memeriksa
+  kondisi.
   </p>
   
   ```js
@@ -1566,12 +1966,14 @@ dan penanganan error. Jenis Control Flow di JavaScrip ada 2 yaitu pengulangan da
     - Perulangan ke-3
     - Perulangan ke-4
     - Perulangan ke-5
+  ```
   
 ---
  
 - **If** 📎
   <p align="justify">  
-  If statement di JavaScript adalah salah satu bentuk control flow yang digunakan untuk membuat percabangan logika. Dengan if, kita bisa menjalankan kode tertentu hanya jika kondisi bernilai true.
+  If statement di JavaScript adalah salah satu bentuk control flow yang digunakan untuk membuat percabangan logika. Dengan if, kita bisa menjalankan
+  kode tertentu hanya jika kondisi bernilai true.
   </p>
   
   ```js
@@ -1583,12 +1985,14 @@ dan penanganan error. Jenis Control Flow di JavaScrip ada 2 yaitu pengulangan da
 
   Output:
     - Boleh masuk
-
+  ```
+  
 ---
    
 - **If Else** 📎
   <p align="justify">  
-  If...Else di JavaScript adalah struktur control flow yang digunakan untuk membuat percabangan logika. Dengan ini, program bisa memilih jalur eksekusi berbeda tergantung apakah suatu kondisi bernilai
+  If...Else di JavaScript adalah struktur control flow yang digunakan untuk membuat percabangan logika. Dengan ini, program bisa memilih jalur
+  eksekusi berbeda tergantung apakah suatu kondisi bernilai
   true atau false.
   </p>
   
@@ -1603,13 +2007,14 @@ dan penanganan error. Jenis Control Flow di JavaScrip ada 2 yaitu pengulangan da
 
   Output:
     - Belum cukup umur
-
+  ```
+  
 ---
   
 - **If, Else If, Else** 📎
   <p align="justify">  
-  If...Else If...Else di JavaScript adalah struktur control flow yang digunakan untuk membuat percabangan logika dengan banyak kondisi. Dengan ini, program bisa memilih jalur eksekusi berbeda tergantung
-  hasil evaluasi kondisi.
+  If...Else If...Else di JavaScript adalah struktur control flow yang digunakan untuk membuat percabangan logika dengan banyak kondisi. Dengan ini,
+  program bisa memilih jalur eksekusi berbeda tergantung hasil evaluasi kondisi.
   </p>
   
   ```js
@@ -1627,13 +2032,15 @@ dan penanganan error. Jenis Control Flow di JavaScrip ada 2 yaitu pengulangan da
 
   Output:
     - Nilai B
+  ```
 
 ---
   
 - **Switch** 📎
   <p align="justify">  
-  Switch statement di JavaScript adalah salah satu bentuk control flow yang digunakan untuk menangani percabangan dengan banyak kemungkinan nilai. Fungsinya mirip dengan if...else if...else, tetapi lebih
-  rapi dan mudah dibaca ketika ada banyak kondisi yang bergantung pada satu variabel atau ekspresi.
+  Switch statement di JavaScript adalah salah satu bentuk control flow yang digunakan untuk menangani percabangan dengan banyak kemungkinan nilai.
+  Fungsinya mirip dengan if...else if...else, tetapi lebih rapi dan mudah dibaca ketika ada banyak kondisi yang bergantung pada satu variabel atau
+  ekspresi.
   </p>
   
   ```js
@@ -1661,3 +2068,4 @@ dan penanganan error. Jenis Control Flow di JavaScrip ada 2 yaitu pengulangan da
 
   Output:
     - Hari kerja pertama
+  ```
