@@ -1016,7 +1016,7 @@ const
   // 2
   ```
   ```js
-  every → mengecek apakah semua elemen benar bernilai true dan false jika ada satu yang salah.
+  every() → mengecek apakah semua elemen benar bernilai true dan false jika ada satu yang salah.
 
   const numbers = [10, 20, 30, 40]; // Array awal.
 
