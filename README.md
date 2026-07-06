@@ -865,7 +865,7 @@ const
 
   ---
   
-  **1. Menambah & Menghapus Elemen** 📎
+  **1. Method Menambah & Menghapus Elemen** 📎
   ```js
   push() → menambah elemen di akhir array.
 
@@ -949,7 +949,7 @@ const
 
   ---
   
-  **2. Mencari & Mengecek Elemen** 📎
+  **2. Method Mencari & Mengecek Elemen** 📎
   ```js
   indexOf() → mencari indeks pertama dari elemen tertentu.
 
@@ -1044,7 +1044,7 @@ const
 
   ---
   
-  **3. Transformasi & Iterasi** 📎
+  **3. Method Transformasi & Iterasi** 📎
   ```js
   map() → membuat array baru dengan hasil transformasi tiap elemen.
 
@@ -1129,7 +1129,7 @@ const
   
   ---
   
-  **4. Utility & Lainnya** 📎
+  **4. Method Utility & Lainnya** 📎
   ```js
   concat() → menggabungkan dua atau lebih array.
 
@@ -1345,7 +1345,7 @@ const
     
   ---
 
-  **1. Mengambil Data (Read Data)** 📎
+  **1. Method Mengambil Data (Read Data)** 📎
   ```js
   Object.keys() → Mengambil semua key
 
@@ -1429,7 +1429,7 @@ const
 
   ---
 
-  **2. Membuat atau Mengubah Object (Create / Modify)** 📎
+  **2. Method Membuat atau Mengubah Object (Create / Modify)** 📎
   ```js
   Object.assign() → Menggabungkan object
 
@@ -1537,7 +1537,7 @@ const
 
   ---
 
-  **3. Validasi / Pengecekan (Checking)** 📎
+  **3. Method Validasi / Pengecekan (Checking)** 📎
   ```js
   Object.hasOwn() → Mengecek apakah property ada
 
@@ -1578,7 +1578,7 @@ const
 
   ---
 
-  **4. Keamanan Object (Protection)** 📎
+  **4. Method Keamanan Object (Protection)** 📎
   ```js
   Object.freeze() → Tidak bisa diubah sama sekali
 
@@ -1625,7 +1625,7 @@ const
   // }
   ```
 
-  **5. Property Descriptor (Advanced)** 📎
+  **5. Method Property Descriptor (Advanced)** 📎
   ```js
   Object.defineProperty() → Membuat atau mengatur satu property
 
@@ -1715,7 +1715,7 @@ const
   // }
   ```
 
-  **6. Informasi Tentang Object (Metadata)** 📎
+  **6. Method Informasi Tentang Object (Metadata)** 📎
   ```js
   Object.isFrozen() → Apakah object di-freeze?
 
