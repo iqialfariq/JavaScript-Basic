@@ -1343,7 +1343,7 @@ const
     console.log(mhs2.sapa()); // Halo, saya Dina dari jurusan Desain
     ```
     
----
+  ---
 
   **1. Mengambil Data (Read Data)** 📎
   ```js
@@ -1775,6 +1775,8 @@ const
   // }
   // Secara default, semua object di JavaScript bersifat extensible, artinya masih bisa ditambah property baru.
   ```
+
+---
 
 ## 🔣 Penjelasan Operator
 <p align="justify"> 
